@@ -14,10 +14,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} bg-slate-50`}>
-        <main className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 inspect">
+        <header className="inspect bg-blue-600">
           <Header />
-          {children}
-        </main>
+        </header>
+        {children}
       </body>
     </html>
   );
