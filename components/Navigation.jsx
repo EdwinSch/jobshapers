@@ -2,12 +2,12 @@ import Link from "next/link";
 
 const Navigation = () => {
   return (
-    <nav>
-      <ul className="flex gap-6">
+    <nav className="hidden md:block">
+      <ul className="flex gap-4">
         <li>
           <Link
             href={"/"}
-            className="px-2.5 py-1.5 hover:bg-green-600 hover:text-white duration-200 rounded-md"
+            className="px-4 py-2 hover:bg-green-600 hover:text-white duration-200 rounded-lg"
           >
             Home
           </Link>
@@ -15,7 +15,7 @@ const Navigation = () => {
         <li>
           <Link
             href={"/vacatures"}
-            className="px-2.5 py-1.5 hover:bg-green-600 hover:text-white duration-200 rounded-md"
+            className="px-4 py-2 hover:bg-green-600 hover:text-white duration-200 rounded-lg"
           >
             Vacatures
           </Link>
@@ -23,7 +23,7 @@ const Navigation = () => {
         <li>
           <Link
             href={"/werknemers"}
-            className="px-2.5 py-1.5 hover:bg-green-600 hover:text-white duration-200 rounded-md"
+            className="px-4 py-2 hover:bg-green-600 hover:text-white duration-200 rounded-lg"
           >
             Werknemers
           </Link>
@@ -31,7 +31,7 @@ const Navigation = () => {
         <li>
           <Link
             href={"/werkgevers"}
-            className="px-2.5 py-1.5 hover:bg-green-600 hover:text-white duration-200 rounded-md"
+            className="px-4 py-2 hover:bg-green-600 hover:text-white duration-200 rounded-lg"
           >
             Werkgevers
           </Link>
@@ -39,7 +39,7 @@ const Navigation = () => {
         <li>
           <Link
             href={"/contact"}
-            className="px-2.5 py-1.5 hover:bg-green-600 hover:text-white duration-200 rounded-md"
+            className="px-4 py-2 hover:bg-green-600 hover:text-white duration-200 rounded-lg"
           >
             Contact
           </Link>
