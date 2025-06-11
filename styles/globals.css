@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-jsBlue: #2563eb;
+  --color-jsGreen: #059669;
+  --color-jsOffWhite: #f8f6f3;
+  --color-jsMidnight: #0f172a;
+  --color-jsText: #475569;
 }
 
 body {

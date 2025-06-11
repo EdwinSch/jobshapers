@@ -3,11 +3,11 @@ import Link from "next/link";
 const Navigation = () => {
   return (
     <nav className="hidden md:block">
-      <ul className="flex gap-4">
+      <ul className="flex gap-8">
         <li>
           <Link
             href={"/"}
-            className="px-4 py-2 hover:bg-green-600 hover:text-white duration-200 rounded-lg"
+            className="text-jsMidnight hover:text-jsBlue duration-200 cursor-pointer"
           >
             Home
           </Link>
@@ -15,7 +15,7 @@ const Navigation = () => {
         <li>
           <Link
             href={"/vacatures"}
-            className="px-4 py-2 hover:bg-green-600 hover:text-white duration-200 rounded-lg"
+            className="text-jsMidnight hover:text-jsBlue duration-200 cursor-pointer"
           >
             Vacatures
           </Link>
@@ -23,7 +23,7 @@ const Navigation = () => {
         <li>
           <Link
             href={"/werknemers"}
-            className="px-4 py-2 hover:bg-green-600 hover:text-white duration-200 rounded-lg"
+            className="text-jsMidnight hover:text-jsBlue duration-200 cursor-pointer"
           >
             Werknemers
           </Link>
@@ -31,7 +31,7 @@ const Navigation = () => {
         <li>
           <Link
             href={"/werkgevers"}
-            className="px-4 py-2 hover:bg-green-600 hover:text-white duration-200 rounded-lg"
+            className="text-jsMidnight hover:text-jsBlue duration-200 cursor-pointer"
           >
             Werkgevers
           </Link>
@@ -39,7 +39,7 @@ const Navigation = () => {
         <li>
           <Link
             href={"/contact"}
-            className="px-4 py-2 hover:bg-green-600 hover:text-white duration-200 rounded-lg"
+            className="text-jsMidnight hover:text-jsBlue duration-200 cursor-pointer"
           >
             Contact
           </Link>
