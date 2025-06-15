@@ -21,7 +21,10 @@ const Header = () => {
         />
       </div>
 
-      <MobileMenu isMobileMenuOpen={isMobileMenuOpen} />
+      <MobileMenu
+        isMobileMenuOpen={isMobileMenuOpen}
+        setIsMobileMenuOpen={setIsMobileMenuOpen}
+      />
     </header>
   );
 };

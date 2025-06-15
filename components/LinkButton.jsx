@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { twMerge } from "tailwind-merge";
 
 const variantClasses = {
   primary:
@@ -14,14 +15,14 @@ const LinkButton = ({
   href = "",
   className = "",
 }) => {
+  const mergedClassName = twMerge(
+    variantClasses[variant],
+    "block rounded-md cursor-pointer duration-200 ease-in-out capitalize",
+    className
+  );
+
   return (
-    <Link
-      href={href}
-      className={`
-        block rounded-md cursor-pointer duration-200 ease-in-out capitalize
-        ${variantClasses[variant]} ${className}
-      `}
-    >
+    <Link href={href} className={mergedClassName}>
       {label}
     </Link>
   );
