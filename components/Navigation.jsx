@@ -7,7 +7,7 @@ const Navigation = () => {
         <li>
           <Link
             href={"/"}
-            className="text-jsMidnight hover:text-jsBlue duration-200 cursor-pointer"
+            className="text-jsText hover:text-jsBlue duration-200 cursor-pointer font-semibold"
           >
             Home
           </Link>
@@ -15,7 +15,7 @@ const Navigation = () => {
         <li>
           <Link
             href={"/vacatures"}
-            className="text-jsMidnight hover:text-jsBlue duration-200 cursor-pointer"
+            className="text-jsText hover:text-jsBlue duration-200 cursor-pointer font-semibold"
           >
             Vacatures
           </Link>
@@ -23,7 +23,7 @@ const Navigation = () => {
         <li>
           <Link
             href={"/werknemers"}
-            className="text-jsMidnight hover:text-jsBlue duration-200 cursor-pointer"
+            className="text-jsText hover:text-jsBlue duration-200 cursor-pointer font-semibold"
           >
             Werknemers
           </Link>
@@ -31,7 +31,7 @@ const Navigation = () => {
         <li>
           <Link
             href={"/werkgevers"}
-            className="text-jsMidnight hover:text-jsBlue duration-200 cursor-pointer"
+            className="text-jsText hover:text-jsBlue duration-200 cursor-pointer font-semibold"
           >
             Werkgevers
           </Link>
@@ -39,7 +39,7 @@ const Navigation = () => {
         <li>
           <Link
             href={"/contact"}
-            className="text-jsMidnight hover:text-jsBlue duration-200 cursor-pointer"
+            className="text-jsText hover:text-jsBlue duration-200 cursor-pointer font-semibold"
           >
             Contact
           </Link>
