@@ -6,13 +6,10 @@
   --color-jsOffWhite: #f8f6f3;
   --color-jsMidnight: #0f172a;
   --color-jsText: #475569;
-}
 
-body {
+  --shadow-imgShadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 .inspect {
   border: solid red 1px;
 }
-
-/* #cbd5e1 */

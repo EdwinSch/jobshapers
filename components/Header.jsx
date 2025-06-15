@@ -1,23 +1,27 @@
+"use client";
+
 import Navigation from "./Navigation";
 import AdminBtns from "./AdminBtns";
-import { FaBars } from "react-icons/fa6";
+import MobileMenuButton from "./MobileMenuButton";
+import MobileMenu from "./MobileMenu";
+import { useState } from "react";
 
 const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
-    <header className="w-full border-b border-slate-300">
+    <header className="w-full h-16 border-b border-slate-300 relative">
       <div className="h-16 mx-auto max-w-7xl px-4 md:px-6 lg:px-8 flex justify-between items-center">
         <div className="text-jsMidnight">LOGO</div>
         <Navigation />
         <AdminBtns />
-
-        {/* Mobile menu btn */}
-        <button
-          type="button"
-          className="block md:hidden cursor-pointer text-jsMidnight hover:text-jsBlue"
-        >
-          <FaBars size="18px" />
-        </button>
+        <MobileMenuButton
+          isMobileMenuOpen={isMobileMenuOpen}
+          setIsMobileMenuOpen={setIsMobileMenuOpen}
+        />
       </div>
+
+      <MobileMenu isMobileMenuOpen={isMobileMenuOpen} />
     </header>
   );
 };
