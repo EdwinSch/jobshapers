@@ -1,13 +1,13 @@
-import Button from "./Button";
+import LinkButton from "./LinkButton";
 
 const AdminBtns = () => {
   return (
     <div className="hidden gap-4 md:flex">
       {/* Sign-in */}
-      <Button label="Sign In" variant="primary" />
+      <LinkButton label="sign in" variant="primary" />
 
       {/* Add Job */}
-      <Button label="Add Job" variant="secondary" />
+      <LinkButton label="add job" variant="secondary" />
     </div>
   );
 };

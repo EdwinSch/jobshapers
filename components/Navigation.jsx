@@ -1,48 +1,24 @@
 import Link from "next/link";
+import LinkButton from "./LinkButton";
 
 const Navigation = () => {
   return (
     <nav className="hidden md:block">
       <ul className="flex gap-8">
         <li>
-          <Link
-            href={"/"}
-            className="text-jsText hover:text-jsBlue duration-200 cursor-pointer font-semibold"
-          >
-            Home
-          </Link>
+          <LinkButton href="/" label="home" variant="ghost" />
         </li>
         <li>
-          <Link
-            href={"/vacatures"}
-            className="text-jsText hover:text-jsBlue duration-200 cursor-pointer font-semibold"
-          >
-            Vacatures
-          </Link>
+          <LinkButton href="/vacatures" label="vacatures" variant="ghost" />
         </li>
         <li>
-          <Link
-            href={"/werknemers"}
-            className="text-jsText hover:text-jsBlue duration-200 cursor-pointer font-semibold"
-          >
-            Werknemers
-          </Link>
+          <LinkButton href="/werknemers" label="werknemers" variant="ghost" />
         </li>
         <li>
-          <Link
-            href={"/werkgevers"}
-            className="text-jsText hover:text-jsBlue duration-200 cursor-pointer font-semibold"
-          >
-            Werkgevers
-          </Link>
+          <LinkButton href="/werkgevers" label="werkgevers" variant="ghost" />
         </li>
         <li>
-          <Link
-            href={"/contact"}
-            className="text-jsText hover:text-jsBlue duration-200 cursor-pointer font-semibold"
-          >
-            Contact
-          </Link>
+          <LinkButton href="/contact" label="contact" variant="ghost" />
         </li>
       </ul>
     </nav>
