@@ -1,5 +1,6 @@
 import LinkButton from "./LinkButton";
 import Image from "next/image";
+import profilePicture from "@/assets/businessman.jpg";
 
 const Hero = () => {
   return (
@@ -38,10 +39,11 @@ const Hero = () => {
       </article>
 
       <Image
-        src={"/businessman.jpg"}
+        src={profilePicture}
         alt="profile picture"
         width={400}
         height={0}
+        priority={true}
         className="block rounded-xl object-cover shadow-imgShadow"
       />
     </section>

@@ -1,5 +1,6 @@
 import LinkButton from "./LinkButton";
-import { FaPhone, FaEnvelope } from "react-icons/fa6";
+import FooterList from "./FooterList";
+import { FaPhone, FaEnvelope, FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -26,15 +27,19 @@ const Footer = () => {
         {/* footer bottom */}
         <section className="flex flex-col sm:flex-row justify-center gap-8 sm:gap-30 my-6">
           {/* socials */}
-          <article>
-            <h5 className="text-white text-lg font-semibold">LOGO</h5>
-          </article>
+          <FooterList title={"LOGO"}>
+            <a
+              href="https://linkedin.com/company/jobshapers"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-jsSubtext hover:text-jsBlue duration-200 ease-in-out"
+            >
+              <FaLinkedin size={24} />
+            </a>
+          </FooterList>
 
           {/* quicklinks */}
-          <article>
-            <h5 className="text-white text-lg font-semibold mb-3">
-              Quicklinks
-            </h5>
+          <FooterList title={"Quicklinks"}>
             <LinkButton
               variant="ghost"
               label="voor werknemers"
@@ -59,22 +64,25 @@ const Footer = () => {
               href="/contact"
               className="text-jsSubtext font-normal mb-2"
             />
-          </article>
+          </FooterList>
 
           {/* contact info */}
-          <article>
-            <h5 className="text-white text-lg font-semibold mb-3">
-              Contact Info
-            </h5>
-            <p className="text-jsSubtext font-normal mb-2 flex items-center gap-3">
+          <FooterList title={"Contact Info"}>
+            <a
+              href="tel:+31 6 12345678"
+              className="text-jsSubtext hover:text-jsBlue dureation-200 font-normal mb-2 flex items-center gap-3"
+            >
               <FaPhone />
               +31 6 12345678
-            </p>
-            <p className="text-jsSubtext font-normal mb-2 flex items-center gap-3">
+            </a>
+            <a
+              href="mailto:hello@jobshapers.com"
+              className="text-jsSubtext hover:text-jsBlue dureation-200 font-normal mb-2 flex items-center gap-3"
+            >
               <FaEnvelope />
               hello@jobshapers.com
-            </p>
-          </article>
+            </a>
+          </FooterList>
         </section>
 
         <hr className="border border-jsText" />
