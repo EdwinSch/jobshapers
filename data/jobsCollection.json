@@ -1,0 +1,122 @@
+[
+  {
+    "$id": "vac001",
+    "vacatureNummer": "P12345",
+    "vacatureTitel": "Procesoperator Chemie",
+    "werkgeverNaam": "ChemNova BV",
+    "functieomschrijving": "Jij gaat werken in een 5-ploegendienst binnen een moderne chemische fabriek. Je bewaakt en stuurt processen aan via een DCS-systeem en grijpt in bij afwijkingen.",
+    "functieEisen": "Jij bent stressbestendig, hebt een VAPRO B diploma en bij voorkeur ervaring in de chemische industrie.",
+    "arbeidsvoorwaarden": "Jij krijgt een ploegentoeslag van 28%, 25 vakantiedagen, pensioenregeling en reiskostenvergoeding.",
+    "employerBenefits": [
+      "Doorgroeimogelijkheden",
+      "Opleidingen en trainingen",
+      "Stabiele organisatie",
+      "Moderne werkomgeving"
+    ],
+    "standplaats": "Delfzijl",
+    "categorie": "procesindustrie",
+    "opleidingsniveau": "MBO-3",
+    "werkNiveau": "medior",
+    "ervaringJaren": 3,
+    "salaris": "€3.000 - €3.800 per maand",
+    "urenPerWeek": 36,
+    "talen": "Nederlands",
+    "rijbewijsNodig": true
+  },
+  {
+    "$id": "vac002",
+    "vacatureNummer": "M90876",
+    "vacatureTitel": "Onderhoudsmonteur Werktuigbouw",
+    "werkgeverNaam": "MechaTech Services",
+    "functieomschrijving": "Jij gaat preventief en correctief onderhoud uitvoeren aan machines in de voedingsmiddelenindustrie.",
+    "functieEisen": "Jij bent technisch sterk, hebt een MBO diploma Werktuigbouwkunde en kennis van hydrauliek en pneumatiek.",
+    "arbeidsvoorwaarden": "Jij krijgt een bedrijfswagen, 13e maand, en mogelijkheden voor cursussen en trainingen.",
+    "employerBenefits": [
+      "Informeel team",
+      "Innovatieve werkomgeving",
+      "Opleidingsmogelijkheden",
+      "Zelfstandige functie"
+    ],
+    "standplaats": "Gorinchem",
+    "categorie": "maakindustrie",
+    "opleidingsniveau": "MBO-4",
+    "werkNiveau": "junior",
+    "ervaringJaren": 1,
+    "salaris": "€2.700 - €3.200 per maand",
+    "urenPerWeek": 40,
+    "talen": "Nederlands",
+    "rijbewijsNodig": true
+  },
+  {
+    "$id": "vac003",
+    "vacatureNummer": "P55661",
+    "vacatureTitel": "Teamleider Productie",
+    "werkgeverNaam": "PolyPack Verpakkingen",
+    "functieomschrijving": "Jij gaat een team van 15 operators aansturen, de productieplanning bewaken en zorgen voor optimale procesresultaten.",
+    "functieEisen": "Jij bent communicatief sterk, hebt minimaal MBO 4 werk- en denkniveau en ervaring als leidinggevende in een productieomgeving.",
+    "arbeidsvoorwaarden": "Jij krijgt een vast contract, bonusregeling en toegang tot een interne leiderschapstraining.",
+    "employerBenefits": [
+      "Familiebedrijf met korte lijnen",
+      "Ruimte voor eigen inbreng",
+      "Interne doorgroei",
+      "Stabiele werkomgeving"
+    ],
+    "standplaats": "Roosendaal",
+    "categorie": "procesindustrie",
+    "opleidingsniveau": "MBO-4",
+    "werkNiveau": "senior",
+    "ervaringJaren": 5,
+    "salaris": "€3.500 - €4.300 per maand",
+    "urenPerWeek": 38,
+    "talen": "Nederlands, Engels",
+    "rijbewijsNodig": false
+  },
+  {
+    "$id": "vac004",
+    "vacatureNummer": "M11223",
+    "vacatureTitel": "CNC Draaier/Frezer",
+    "werkgeverNaam": "MetaalPlus",
+    "functieomschrijving": "Jij gaat zelfstandig werken aan CNC-draaibanken en -frezen voor de productie van precisieonderdelen.",
+    "functieEisen": "Jij bent nauwkeurig, hebt ervaring met Fanuc of Heidenhain besturing en kunt technische tekeningen lezen.",
+    "arbeidsvoorwaarden": "Jij krijgt een uitstekend uurloon, ploegentoeslag, en een goed uitgeruste werkplek met moderne machines.",
+    "employerBenefits": [
+      "Moderne machines",
+      "Veilige werkomgeving",
+      "Vakgerichte trainingen",
+      "Doorgroeimogelijkheden"
+    ],
+    "standplaats": "Almelo",
+    "categorie": "maakindustrie",
+    "opleidingsniveau": "VMBO",
+    "werkNiveau": "medior",
+    "ervaringJaren": 4,
+    "salaris": "€2.900 - €3.500 per maand",
+    "urenPerWeek": 40,
+    "talen": "Nederlands",
+    "rijbewijsNodig": false
+  },
+  {
+    "$id": "vac005",
+    "vacatureNummer": "P44578",
+    "vacatureTitel": "Kwaliteitsmedewerker Productie",
+    "werkgeverNaam": "BioPharm Nederland",
+    "functieomschrijving": "Jij gaat kwaliteitscontroles uitvoeren, afwijkingen registreren en meewerken aan verbeterprojecten binnen een GMP-omgeving.",
+    "functieEisen": "Jij bent analytisch, hebt kennis van GMP en minimaal een MBO-opleiding richting laboratorium of procestechniek.",
+    "arbeidsvoorwaarden": "Jij krijgt een 32-urige werkweek, thuiswerkopties voor rapportages en een goede pensioenregeling.",
+    "employerBenefits": [
+      "Internationale impact",
+      "Flexibele werktijden",
+      "Moderne faciliteiten",
+      "Persoonlijke ontwikkeling"
+    ],
+    "standplaats": "Leiden",
+    "categorie": "procesindustrie",
+    "opleidingsniveau": "MBO-4",
+    "werkNiveau": "medior",
+    "ervaringJaren": 2,
+    "salaris": "€3.100 - €3.700 per maand",
+    "urenPerWeek": 32,
+    "talen": "Nederlands, Engels",
+    "rijbewijsNodig": false
+  }
+]

@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="bg-jsMidnight">
       <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
         {/* footer top */}
-        <div className="py-16 text-center">
+        <div className="py-10 sm:py-16 text-center">
           <h4 className="text-white text-3xl font-bold mb-4">
             Klaar voor de volgende stap?
           </h4>
@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
 
         {/* footer bottom */}
-        <section className="flex flex-col sm:flex-row justify-center gap-8 sm:gap-30 my-6">
+        <section className="flex flex-col sm:flex-row justify-center gap-8 sm:gap-30 my-0 sm:my-6">
           {/* socials */}
           <FooterList title={"LOGO"}>
             <a
@@ -87,7 +87,7 @@ const Footer = () => {
 
         <hr className="border border-jsText" />
 
-        <p className="text-white text-center py-8 text-sm">
+        <p className="text-white text-center py-4 sm:py-8 text-sm">
           &copy; {year} JOBSHAPERS
         </p>
       </div>
