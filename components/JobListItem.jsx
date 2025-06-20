@@ -2,11 +2,11 @@ import { FaLocationDot, FaClock, FaEuroSign } from "react-icons/fa6";
 import LinkButton from "./LinkButton";
 
 const JobListItem = ({
+  $id,
   vacatureTitel,
   standplaats,
   urenPerWeek,
   salaris,
-  functieomschrijving,
 }) => {
   return (
     <article className="bg-white mb-6 p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 md:gap-10 rounded-md border border-slate-300">
@@ -32,7 +32,11 @@ const JobListItem = ({
 
       {/* right/bottom */}
       <div className="flex gap-2">
-        <LinkButton variant="tertiary" href="/" label={"bekijk vacature"} />
+        <LinkButton
+          variant="tertiary"
+          href={`/vacatures/${$id}`}
+          label={"bekijk vacature"}
+        />
         <LinkButton variant="primary" href="/contact" label={"solliciteer"} />
       </div>
     </article>
