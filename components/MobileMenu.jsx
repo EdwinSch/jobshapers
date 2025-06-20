@@ -12,7 +12,7 @@ const MobileMenu = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
     <div
       className={`${
         isMobileMenuOpen ? "w-full p-8" : "w-0 p-0"
-      } h-screen bg-jsOffWhite absolute top-16 right-0 overflow-hidden duration-300`}
+      } h-screen bg-jsOffWhite absolute top-24 right-0 overflow-hidden duration-300`}
     >
       <nav>
         <ul className="flex flex-col gap-6">

@@ -7,7 +7,7 @@ const JobsPage = () => {
   return (
     <>
       {/* search section */}
-      <div className="mx-auto max-w-7xl py-12 px-4 md:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl py-8 md:py-12 px-4 md:px-6 lg:px-8">
         <h1 className="mb-8 text-center text-2xl sm:text-3xl font-bold text-jsGreen uppercase">
           Vacatures
         </h1>
@@ -29,12 +29,12 @@ const JobsPage = () => {
           </form>
 
           {/* filter container */}
-          <div className="flex items-center gap-3">
+          <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
             <p className="text-jsText text-sm">Filter per categorie:</p>
-            <ActionButton label={"processindustrie"} />
-            <ActionButton label={"junior"} />
-            <ActionButton label={"medior"} />
-            <ActionButton label={"senior"} />
+            <ActionButton label={"processindustrie"} className="text-sm" />
+            <ActionButton label={"junior"} className="text-sm" />
+            <ActionButton label={"medior"} className="text-sm" />
+            <ActionButton label={"senior"} className="text-sm" />
           </div>
         </div>
       </div>
