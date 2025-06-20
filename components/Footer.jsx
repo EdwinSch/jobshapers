@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
         {/* footer top */}
         <div className="py-10 sm:py-16 text-center">
-          <h4 className="text-white text-3xl font-bold mb-4">
+          <h4 className="text-white text-3xl font-bold mb-2">
             Klaar voor de volgende stap?
           </h4>
           <p className="text-jsSubtext text-lg mb-4">

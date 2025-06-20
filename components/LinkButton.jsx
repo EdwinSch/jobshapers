@@ -6,6 +6,8 @@ const variantClasses = {
     "text-sm px-4 py-2 border-slate-300 border bg-jsOffWhite hover:bg-jsBlue/10",
   secondary:
     "text-sm px-4 py-2 bg-jsBlue text-white border border-jsBlue hover:bg-[#163ea5]",
+  tertiary:
+    "text-sm px-4 py-2 bg-jsGreen text-white border border-jsGreen hover:bg-[#33b68b]",
   ghost: "text-base text-jsText hover:text-jsBlue font-semibold",
 };
 
