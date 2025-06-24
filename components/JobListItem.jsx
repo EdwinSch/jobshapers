@@ -9,7 +9,7 @@ const JobListItem = ({
   salaris,
 }) => {
   return (
-    <article className="bg-white mb-6 p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 md:gap-10 rounded-md border border-slate-300">
+    <article className="shadow-md bg-white mb-6 p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 md:gap-10 rounded-md border border-slate-300">
       {/* left/top */}
       <div>
         <h3 className="text-xl font-bold mb-1.5">{vacatureTitel}</h3>

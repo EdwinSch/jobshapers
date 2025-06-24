@@ -29,7 +29,7 @@ const JobsPage = () => {
           </form>
 
           {/* filter container */}
-          <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
+          <div className="flex md:flex-row flex-wrap items-center md:items-center gap-3">
             <p className="text-jsText text-sm">Filter per categorie:</p>
             <ActionButton label={"processindustrie"} className="text-sm" />
             <ActionButton label={"junior"} className="text-sm" />
