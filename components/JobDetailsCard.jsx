@@ -4,17 +4,17 @@ const JobDetailsCard = ({ standplaats, urenPerWeek, salaris }) => {
   const shortSalaris = salaris.split(" per ")[0];
 
   return (
-    <section className="mt-6 md:mt-0 p-8 border border-slate-300 rounded-md">
+    <section className="mt-4 md:mt-0 min-w-full sm:min-w-[340px] p-6 sm:p-8 border border-slate-300 rounded-md shadow-sm">
       {/* info */}
-      <article className="flex justify-between gap-8 mb-4">
+      <article className="flex justify-between mb-3">
         <p className="text-jsText">Standplaats</p>
         <p className="text-jsMidnight">{standplaats}</p>
       </article>
-      <article className="flex justify-between gap-8 mb-4">
+      <article className="flex justify-between mb-3">
         <p className="text-jsText">Uren</p>
-        <p className="text-jsMidnight">{urenPerWeek} p/w</p>
+        <p className="text-jsMidnight">{urenPerWeek}u p/w</p>
       </article>
-      <article className="flex justify-between gap-8 mb-4">
+      <article className="flex justify-between mb-3">
         <p className="text-jsText">Salaris indicatie</p>
         <p className="text-jsMidnight">{shortSalaris}</p>
       </article>

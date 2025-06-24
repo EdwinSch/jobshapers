@@ -1,20 +1,23 @@
 import jobs from "@/data/jobsCollection.json";
 import LinkButton from "@/components/LinkButton";
 import JobDetailsHeader from "@/components/JobDetailsHeader";
+import JobDetailsBody from "@/components/JobDetailsBody";
 
 const JobDetailPage = async ({ params }) => {
   const { id } = await params;
   const jobDetails = jobs.find((job) => job.$id === id);
 
   return (
-    <div className="mx-auto max-w-7xl py-8 px-4 md:px-6 lg:px-8">
-      {/* return route */}
-      <LinkButton
-        label="&#60;&#8211; Terug naar vacature overzicht"
-        href="/vacatures"
-        variant="ghost"
-        className="font-normal"
-      />
+    <>
+      <div className="mt-6 mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
+        {/* return route */}
+        <LinkButton
+          label="&#60;&#8211; Terug naar vacature overzicht"
+          href="/vacatures"
+          variant="ghost"
+          className="font-normal text-sm"
+        />
+      </div>
 
       {/* Error handling */}
       {!jobDetails && (
@@ -27,9 +30,10 @@ const JobDetailPage = async ({ params }) => {
       {jobDetails && (
         <>
           <JobDetailsHeader jobDetails={jobDetails} />
+          <JobDetailsBody {...jobDetails} />
         </>
       )}
-    </div>
+    </>
   );
 };
 
