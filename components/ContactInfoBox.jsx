@@ -16,18 +16,50 @@ const ContactInfoBox = () => {
 
       {/* Contact info items */}
       <div className="flex flex-col gap-6">
+        {/* location */}
         <ContactItem title="locatie" icon={FaLocationDot}>
           <p className="text-jsText">Breda, Netherlands</p>
         </ContactItem>
 
+        {/* Telephone */}
         <ContactItem
           title="telefoon"
           icon={FaPhone}
           iconColor="text-jsGreen"
-          iconShade="#d2fae5"
+          iconShade={"#d2fae5"}
         >
-          <a href="tel:+31 6 12345678" className="text-jsText">
+          <a
+            href="tel:+31 6 12345678"
+            className="text-jsText hover:text-jsMidnight duration-200"
+          >
             +31 6 12345678
+          </a>
+        </ContactItem>
+
+        {/* email */}
+        <ContactItem title="email" icon={FaEnvelope} iconColor="text-jsBlue">
+          <a
+            href="mailto:hello@jobshapers.com"
+            className="text-jsText hover:text-jsMidnight duration-200"
+          >
+            hello@jobshapers.com
+          </a>
+        </ContactItem>
+
+        {/* social */}
+        <ContactItem
+          title="LinkedIn"
+          icon={FaLinkedin}
+          iconColor="text-jsGreen"
+          iconShade={"#d2fae5"}
+        >
+          <a
+            href="https://linkedin.com/company/jobshapers"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-jsText hover:text-jsMidnight duration-200"
+          >
+            LinkedIn
           </a>
         </ContactItem>
       </div>
