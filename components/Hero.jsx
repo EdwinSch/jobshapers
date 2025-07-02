@@ -38,14 +38,15 @@ const Hero = () => {
         </div>
       </article>
 
-      <Image
-        src={profilePicture}
-        alt="profile picture"
-        width={400}
-        height={0}
-        priority={true}
-        className="block rounded-xl object-cover shadow-imgShadow"
-      />
+      <div className="relative w-[400px] h-[500px] shrink-0">
+        <Image
+          src={profilePicture}
+          alt="profile picture"
+          fill
+          className="object-cover rounded-xl shadow-imgShadow"
+          priority
+        />
+      </div>
     </section>
   );
 };
