@@ -10,7 +10,7 @@ const EmployersHero = () => {
           De juiste mensen maken het verschil
         </h1>
 
-        <p className="text-jsMidnight text-base mt-4">
+        <p className="text-jsMidnight text-base my-4">
           Als specialist in het vinden van de perfecte match binnen diverse
           branches begrijpt JOBSHAPERS als geen ander dat de juiste medewerkers
           het fundament zijn voor het succes van jouw organisatie. Wij gaan
@@ -20,11 +20,16 @@ const EmployersHero = () => {
           bedrijfscultuur en toekomstvisie.
         </p>
 
+        <p>
+          Neem vandaag nog contact met ons op en ervaar hoe wij jouw
+          personeelswerving naar een hoger niveau tillen.
+        </p>
+
         {/* Buttons */}
         <div className="mt-8 flex flex-col sm:flex-row gap-4">
           <LinkButton
             href="/contact"
-            label="neem contact op"
+            label="plan een gesprek"
             variant="secondary"
             className="w-fit"
           />

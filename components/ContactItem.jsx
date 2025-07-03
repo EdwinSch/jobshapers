@@ -8,7 +8,7 @@ const ContactItem = ({
   return (
     <div className="flex gap-3">
       <div
-        className={`w-10 h-10 rounded-lg grid place-items-center`}
+        className="w-10 h-10 rounded-lg grid place-items-center"
         style={{ backgroundColor: iconShade }}
       >
         {Icon && <Icon size={18} className={iconColor} />}

@@ -9,7 +9,7 @@ const Faq = () => {
             key={idx}
             className="p-6 bg-jsOffWhite border border-slate-300 rounded-md"
           >
-            <h4 className="mb-4 text-jsMidnight text-lg font-bold">
+            <h4 className="mb-4 text-jsMidnight text-lg font-bold leading-snug">
               {item.question}
             </h4>
             <p className="text-jsText">{item.answer}</p>
