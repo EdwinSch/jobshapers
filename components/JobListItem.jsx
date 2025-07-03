@@ -1,11 +1,17 @@
-import { FaLocationDot, FaClock, FaEuroSign } from "react-icons/fa6";
+import {
+  FaLocationDot,
+  FaClock,
+  FaEuroSign,
+  FaGraduationCap,
+} from "react-icons/fa6";
 import LinkButton from "./LinkButton";
 
 const JobListItem = ({
   $id,
   vacatureTitel,
   standplaats,
-  urenPerWeek,
+  uren,
+  opleiding,
   salaris,
 }) => {
   return (
@@ -15,15 +21,19 @@ const JobListItem = ({
         <h3 className="text-xl font-bold mb-1.5">{vacatureTitel}</h3>
 
         <div className="flex flex-col md:flex-row gap-1 md:gap-4">
-          <p className="flex items-center gap-1">
+          <p className="flex items-center gap-1.5">
             <FaLocationDot className="text-jsGreen" />
             <span className="text-jsText">{standplaats}</span>
           </p>
-          <p className="flex items-center gap-1">
-            <FaClock className="text-jsGreen" />
-            <span className="text-jsText">{urenPerWeek} uur</span>
+          <p className="flex items-center gap-1.5">
+            <FaGraduationCap className="text-jsGreen" />
+            <span className="text-jsText">{opleiding}</span>
           </p>
-          <p className="flex items-center gap-1">
+          <p className="flex items-center gap-1.5">
+            <FaClock className="text-jsGreen" />
+            <span className="text-jsText">{uren} uur</span>
+          </p>
+          <p className="flex items-center gap-1.5">
             <FaEuroSign className="text-jsGreen" />
             <span className="text-jsText">{salaris}</span>
           </p>
@@ -32,12 +42,12 @@ const JobListItem = ({
 
       {/* right/bottom */}
       <div className="flex gap-2">
+        <LinkButton variant="tertiary" href="/contact" label={"solliciteer"} />
         <LinkButton
-          variant="tertiary"
+          variant="primary"
           href={`/vacatures/${$id}`}
           label={"bekijk vacature"}
         />
-        <LinkButton variant="primary" href="/contact" label={"solliciteer"} />
       </div>
     </article>
   );

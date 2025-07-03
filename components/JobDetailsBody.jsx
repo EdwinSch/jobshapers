@@ -1,27 +1,31 @@
 import ListCard from "./ListCard";
 
 const JobDetailsBody = ({
-  employerBenefits,
   functieEisen,
   arbeidsvoorwaarden,
+  functieomschrijving,
 }) => {
   return (
     <div className="bg-jsOffWhite">
       <div className="py-12 mt-6 mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
+        {/* Functieomschrijving */}
+        <div className="mb-8 bg-white border border-slate-300 p-6 rounded-md shadow-sm">
+          <h2 className="text-xl font-semibold capitalize mb-5">
+            Functieomschrijving
+          </h2>
+          <p className="text-jsText">{functieomschrijving}</p>
+        </div>
+
+        {/* Lists */}
         <ListCard
-          title="functie eisen"
+          title="Functie-eisen"
           list={functieEisen}
           iconColor="text-jsGreen"
         />
         <ListCard
-          title="arbeidsvoorwaarden"
+          title="Arbeidsvoorwaarden"
           list={arbeidsvoorwaarden}
           iconColor="text-jsGreen"
-        />
-        <ListCard
-          title="werkgever"
-          list={employerBenefits}
-          iconColor="text-jsBlue"
         />
       </div>
     </div>

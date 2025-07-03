@@ -1,168 +1,170 @@
 [
   {
-    "$id": "vac001",
-    "vacatureNummer": "1001",
-    "vacatureTitel": "Procesoperator B",
-    "werkgeverNaam": "ChemieTech BV",
-    "functieomschrijving": "Jij gaat werken in een 5-ploegendienst en bent verantwoordelijk voor het bewaken van het productieproces van grondstof tot eindproduct.",
+    "$id": "1a2b3c4d",
+    "vacatureNummer": "IND-001",
+    "vacatureTitel": "Onderhoudsmonteur",
+    "subTitel": "Technische dienst",
+    "introductie": "Heb jij twee rechterhanden en een passie voor techniek? Kom werken bij een modern productiebedrijf in de regio!",
+    "functieomschrijving": "Als onderhoudsmonteur ben je verantwoordelijk voor het preventief en correctief onderhoud aan ons machinepark. Je werkt samen met collega’s uit het technische team en zorgt dat storingen snel en efficiënt worden opgelost.",
     "functieEisen": [
-      "MBO niveau 3 of 4 in procestechniek",
-      "Ervaring met werken in ploegendienst",
-      "Zelfstandig en nauwkeurig",
-      "In staat om veiligheidsvoorschriften strikt na te leven"
+      "Afgeronde MBO opleiding richting techniek",
+      "Minimaal 2 jaar ervaring in een vergelijkbare functie",
+      "Bekend met hydrauliek en pneumatiek",
+      "Bereid om in ploegendienst te werken"
     ],
     "arbeidsvoorwaarden": [
-      "Salaris conform CAO, inclusief ploegentoeslag",
+      "Salaris tussen €2.800 en €3.400 per maand",
+      "25 vakantiedagen en 13 ATV-dagen",
       "Reiskostenvergoeding",
-      "Opleidings- en doorgroeimogelijkheden",
-      "24 vakantiedagen en 13 ADV-dagen"
+      "Doorgroeimogelijkheden en opleidingen"
     ],
-    "employerBenefits": [
-      "Fietsplan",
-      "Korting op sportschoolabonnement",
-      "Vitaliteitsprogramma",
-      "Jaarlijkse teamuitjes"
-    ],
-    "standplaats": "Geleen",
-    "categorie": "productie",
-    "opleidingsniveau": "mbo",
-    "werkNiveau": "medior",
-    "ervaringJaren": 2,
-    "salaris": "€3.000 - €3.800 per maand",
-    "urenPerWeek": 40,
-    "talen": "Nederlands",
-    "rijbewijsNodig": true
-  },
-  {
-    "$id": "vac002",
-    "vacatureNummer": "1002",
-    "vacatureTitel": "Onderhoudsmonteur WTB",
-    "werkgeverNaam": "IndusRepair NL",
-    "functieomschrijving": "Je bent verantwoordelijk voor het preventief en correctief onderhoud van werktuigbouwkundige installaties in de fabriek.",
-    "functieEisen": [
-      "MBO diploma werktuigbouwkunde",
-      "Kennis van hydrauliek en pneumatiek",
-      "Bereidheid tot consignatiedienst",
-      "Hands-on mentaliteit"
-    ],
-    "arbeidsvoorwaarden": [
-      "Marktconform salaris",
-      "Werkbus en gereedschap van de zaak",
-      "Goede pensioenregeling",
-      "Vakgerichte trainingen"
-    ],
-    "employerBenefits": [
-      "Gratis werkkleding en PBM's",
-      "Doorgroeien naar teamleider mogelijk",
-      "Open en informele bedrijfscultuur"
-    ],
+    "categorie": "techniek",
     "standplaats": "Eindhoven",
-    "categorie": "onderhoud",
-    "opleidingsniveau": "mbo",
-    "werkNiveau": "junior",
-    "ervaringJaren": 1,
-    "salaris": "€2.800 - €3.500 per maand",
-    "urenPerWeek": 38,
-    "talen": "Nederlands",
-    "rijbewijsNodig": true
+    "opleiding": "MBO",
+    "niveau": "medior",
+    "salaris": "€2.800 - €3.400",
+    "uren": 40,
+    "featured": false,
+    "werkgever": "TechnoPro BV"
   },
   {
-    "$id": "vac003",
-    "vacatureNummer": "1003",
-    "vacatureTitel": "Teamleider Productie",
-    "werkgeverNaam": "MetaalFlex",
-    "functieomschrijving": "Als teamleider geef je leiding aan een ploeg van 10 operators en zorg je voor een veilige en efficiënte productie.",
+    "$id": "2e3f4g5h",
+    "vacatureNummer": "IND-002",
+    "vacatureTitel": "Procesoperator",
+    "subTitel": "Chemische industrie",
+    "introductie": "Wil jij werken met geavanceerde installaties in een schone en veilige omgeving? Dan is dit jouw kans!",
+    "functieomschrijving": "In deze rol bewaak je het productieproces en zorg je dat de installaties optimaal functioneren. Je stuurt bij waar nodig en voert kwaliteitscontroles uit.",
     "functieEisen": [
-      "Ervaring in leidinggeven binnen de productie",
-      "Kennis van LEAN is een pré",
-      "Goede communicatieve vaardigheden",
-      "Flexibel en resultaatgericht"
+      "MBO diploma, bij voorkeur VAPRO B",
+      "Ervaring in een productieomgeving is een pré",
+      "Veiligheidsbewust en nauwkeurig",
+      "Bereid om in 5-ploegendienst te werken"
     ],
     "arbeidsvoorwaarden": [
-      "Leidinggevende rol met verantwoordelijkheid",
-      "Salaris met bonusstructuur",
-      "Auto van de zaak mogelijk",
-      "Pensioenregeling en extra verlofdagen"
+      "Salaris tot €3.800 per maand inclusief ploegentoeslag",
+      "8% vakantiegeld",
+      "Pensioenregeling",
+      "Uitgebreid inwerkprogramma"
     ],
-    "employerBenefits": [
-      "Training in leiderschap",
-      "Laptop en telefoon van de zaak",
-      "Hybride werken mogelijk"
-    ],
-    "standplaats": "Drachten",
-    "categorie": "leidinggevend",
-    "opleidingsniveau": "hbo",
-    "werkNiveau": "senior",
-    "ervaringJaren": 5,
-    "salaris": "€3.800 - €4.600 per maand",
-    "urenPerWeek": 40,
-    "talen": "Nederlands, Engels",
-    "rijbewijsNodig": true
+    "categorie": "productie",
+    "standplaats": "Geleen",
+    "opleiding": "MBO",
+    "niveau": "junior",
+    "salaris": "€3.000 - €3.800",
+    "uren": 36,
+    "featured": false,
+    "werkgever": "ChemNova NL"
   },
   {
-    "$id": "vac004",
-    "vacatureNummer": "1004",
+    "$id": "3h4i5j6k",
+    "vacatureNummer": "IND-003",
     "vacatureTitel": "Kwaliteitsmedewerker",
-    "werkgeverNaam": "FoodControl BV",
-    "functieomschrijving": "Je controleert de kwaliteit van producten en processen binnen de voedingsmiddelenindustrie.",
+    "subTitel": "Voedingsmiddelenindustrie",
+    "introductie": "Ben jij scherp op kwaliteit en heb je een oog voor detail? Dan zoeken wij jou!",
+    "functieomschrijving": "Je bewaakt de kwaliteit van onze producten door steekproeven en controles. Je rapporteert afwijkingen en denkt mee over verbeteringen.",
     "functieEisen": [
-      "MBO of HBO voeding of laboratorium",
-      "Kennis van HACCP en BRC",
-      "Nauwkeurig en analytisch ingesteld",
-      "Ervaring met audits is een plus"
+      "HBO werk- en denkniveau",
+      "Ervaring met HACCP of BRC is een pré",
+      "Proactieve houding",
+      "Goede communicatieve vaardigheden"
     ],
     "arbeidsvoorwaarden": [
-      "Salaris volgens CAO Voedingsmiddelenindustrie",
-      "Vakantiegeld en eindejaarsuitkering",
-      "Reiskostenvergoeding",
-      "Interne opleidingsmogelijkheden"
+      "Salaris tussen €2.700 en €3.500",
+      "25 vakantiedagen",
+      "Collectieve ziektekostenverzekering",
+      "Korting op onze producten"
     ],
-    "employerBenefits": [
-      "Bedrijfskantine met gezonde lunch",
-      "Mogelijkheid tot parttime",
-      "Korting op bedrijfsproducten"
-    ],
-    "standplaats": "Zaandam",
     "categorie": "kwaliteit",
-    "opleidingsniveau": "hbo",
-    "werkNiveau": "medior",
-    "ervaringJaren": 3,
-    "salaris": "€3.000 - €3.600 per maand",
-    "urenPerWeek": 36,
-    "talen": "Nederlands",
-    "rijbewijsNodig": false
+    "standplaats": "Almere",
+    "opleiding": "HBO",
+    "niveau": "medior",
+    "salaris": "€2.700 - €3.500",
+    "uren": 40,
+    "featured": false,
+    "werkgever": "Fresh&Safe Food BV"
   },
   {
-    "$id": "vac005",
-    "vacatureNummer": "1005",
-    "vacatureTitel": "Allround Operator",
-    "werkgeverNaam": "PackPro Nederland",
-    "functieomschrijving": "Je stelt verpakkingsmachines in, lost storingen op en voert kwaliteitscontroles uit.",
+    "$id": "4k5l6m7n",
+    "vacatureNummer": "IND-004",
+    "vacatureTitel": "Productiemedewerker",
+    "subTitel": "Dagdienst",
+    "introductie": "Zoek je een leuke baan in dagdienst waar je direct aan de slag kunt? Reageer dan snel!",
+    "functieomschrijving": "Je ondersteunt in het productieproces door het aanvoeren van materialen, het controleren van producten en het verpakken van eindproducten.",
     "functieEisen": [
-      "Technisch MBO-diploma",
-      "Ervaring in productieomgeving",
-      "Zelfstandig kunnen werken",
-      "Bereidheid tot ploegendienst"
+      "Beheersing van de Nederlandse taal",
+      "Nauwkeurig kunnen werken",
+      "Fysiek in goede conditie",
+      "Ervaring is niet vereist, wel een plus"
     ],
     "arbeidsvoorwaarden": [
-      "Salaris inclusief ploegentoeslag",
+      "Salaris vanaf €2.300 per maand",
       "Reiskostenvergoeding",
-      "Trainingen on-the-job",
-      "Vaste aanstelling bij goed functioneren"
+      "Werk in een gezellig team",
+      "Kans op vast dienstverband"
     ],
-    "employerBenefits": [
-      "Ploegentoeslag boven marktgemiddelde",
-      "Wekelijkse fruitbox",
-      "Personeelskorting op verpakkingsproducten"
+    "categorie": "productie",
+    "standplaats": "Zwolle",
+    "opleiding": "VMBO",
+    "niveau": "junior",
+    "salaris": "€2.300 - €2.600",
+    "uren": 40,
+    "featured": false,
+    "werkgever": "FlexIndustries"
+  },
+  {
+    "$id": "5n6o7p8q",
+    "vacatureNummer": "IND-005",
+    "vacatureTitel": "Teamleider Logistiek",
+    "subTitel": "Distributiecentrum",
+    "introductie": "Wil jij leidinggeven aan een enthousiast team in een snelgroeiende organisatie? Dan zoeken wij jou als teamleider!",
+    "functieomschrijving": "Je stuurt het logistieke team aan, bewaakt processen en zorgt voor een efficiënte doorstroom van goederen binnen het magazijn.",
+    "functieEisen": [
+      "MBO+ werk- en denkniveau",
+      "Ervaring als leidinggevende in logistiek",
+      "Goede kennis van WMS-systemen",
+      "Stressbestendig en oplossingsgericht"
     ],
+    "arbeidsvoorwaarden": [
+      "Salaris tot €3.900 per maand",
+      "8% vakantiegeld",
+      "Leidinggevende functie met verantwoordelijkheid",
+      "Mogelijkheid tot het volgen van trainingen"
+    ],
+    "categorie": "logistiek",
+    "standplaats": "Tilburg",
+    "opleiding": "MBO",
+    "niveau": "senior",
+    "salaris": "€3.200 - €3.900",
+    "uren": 40,
+    "featured": false,
+    "werkgever": "Move-It Logistics"
+  },
+  {
+    "$id": "6p7q8r9s",
+    "vacatureNummer": "IND-006",
+    "vacatureTitel": "Werkvoorbereider",
+    "subTitel": "Metaalindustrie",
+    "introductie": "Ben jij een organisatorisch talent met een passie voor techniek? Word werkvoorbereider bij een toonaangevend metaalbedrijf.",
+    "functieomschrijving": "Je bereidt projecten voor, stelt planningen op en zorgt dat materialen en documentatie beschikbaar zijn. Je bent de schakel tussen engineering en productie.",
+    "functieEisen": [
+      "HBO werk- en denkniveau",
+      "Affiniteit met techniek en productie",
+      "Ervaring met ERP-systemen",
+      "Goede planningsvaardigheden"
+    ],
+    "arbeidsvoorwaarden": [
+      "Salaris tussen €3.000 en €4.000",
+      "Laptop en telefoon van de zaak",
+      "25 vakantiedagen",
+      "Doorgroeimogelijkheden binnen het bedrijf"
+    ],
+    "categorie": "techniek",
     "standplaats": "Apeldoorn",
-    "categorie": "operator",
-    "opleidingsniveau": "mbo",
-    "werkNiveau": "junior",
-    "ervaringJaren": 1,
-    "salaris": "€2.600 - €3.200 per maand",
-    "urenPerWeek": 40,
-    "talen": "Nederlands",
-    "rijbewijsNodig": false
+    "opleiding": "HBO",
+    "niveau": "medior",
+    "salaris": "€3.000 - €4.000",
+    "uren": 40,
+    "featured": false,
+    "werkgever": "SteelCraft NL"
   }
 ]

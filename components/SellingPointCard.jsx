@@ -14,7 +14,7 @@ const SellingPointCard = ({
       >
         {Icon && <Icon size={22} className={iconColor} />}
       </div>
-      <h3 className="mb-1.5 text-2xl font-semibold capitalize">{title}</h3>
+      <h3 className="mb-1.5 text-xl font-semibold capitalize">{title}</h3>
       <p className="text-jsText text-sm">{text}</p>
     </article>
   );

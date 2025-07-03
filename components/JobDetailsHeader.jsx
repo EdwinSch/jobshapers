@@ -14,7 +14,7 @@ const JobDetailsHeader = ({ jobDetails }) => {
           <span className="text-sm">Geplaatst op: 1 januarie 2025</span>
         </p>
         {/* job description */}
-        <p>{jobDetails.functieomschrijving}</p>
+        <p>{jobDetails.introductie}</p>
       </div>
 
       {/* right/bottom */}
