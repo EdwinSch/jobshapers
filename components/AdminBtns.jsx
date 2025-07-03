@@ -8,7 +8,7 @@ const AdminBtns = () => {
       <LinkButton label="sign in" variant="primary" />
 
       {/* Add Job */}
-      <LinkButton label="post job" variant="secondary" />
+      <LinkButton label="post job" href="/createjob" variant="secondary" />
     </div>
   );
 };
