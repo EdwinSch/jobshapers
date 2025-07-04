@@ -158,6 +158,7 @@ const JobCreationPage = () => {
             id="level"
             className="mt-1 mb-4 w-full py-2 px-3 bg-jsOffWhite border border-slate-300 rounded-md text-sm"
           >
+            <option value="junior">NVT.</option>
             <option value="junior">Junior</option>
             <option value="medior">Medior</option>
             <option value="senior">Senior</option>
