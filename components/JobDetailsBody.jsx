@@ -1,7 +1,10 @@
 import ListCard from "./ListCard";
+import LinkButton from "./LinkButton";
 
 const JobDetailsBody = ({
+  eisenKoptekst,
   functieEisen,
+  voorwaardenKoptekst,
   arbeidsvoorwaarden,
   functieomschrijving,
 }) => {
@@ -21,11 +24,20 @@ const JobDetailsBody = ({
           title="Functie-eisen"
           list={functieEisen}
           iconColor="text-jsGreen"
+          eisenKoptekst={eisenKoptekst}
         />
         <ListCard
           title="Arbeidsvoorwaarden"
           list={arbeidsvoorwaarden}
           iconColor="text-jsGreen"
+          voorwaardenKoptekst={voorwaardenKoptekst}
+        />
+
+        <LinkButton
+          variant="tertiary"
+          href="/contact"
+          label={"solliciteer nu"}
+          className="mt-4 w-fit mx-auto"
         />
       </div>
     </div>

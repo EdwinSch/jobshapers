@@ -43,15 +43,19 @@ const JobCreationPage = () => {
 
           {/* vacature SUBtitel */}
           <label htmlFor="subtitle" className="text-jsMidnight text-sm">
-            Vacature sub-titel (niet verplicht)
+            Subtitel/diensten
           </label>
-          <input
-            type="text"
+          <select
             name=""
             id="subtitle"
-            placeholder="Dagdienst"
             className="mt-1 mb-4 w-full py-2 px-3 bg-jsOffWhite border border-slate-300 rounded-md text-sm"
-          />
+          >
+            <option value="dagdienst">Dagdienst</option>
+            <option value="2-ploegen">2 ploegendienst</option>
+            <option value="3-ploegen">3 ploegendienst</option>
+            <option value="4-ploegen">4 ploegendienst</option>
+            <option value="5-ploegen">5 ploegendienst</option>
+          </select>
 
           {/* werkgever */}
           <label htmlFor="employer-name" className="text-jsMidnight text-sm">
@@ -101,6 +105,21 @@ const JobCreationPage = () => {
             style={{ resize: "none" }}
           />
 
+          {/* functie-eisen KOPTEKST */}
+          <label
+            htmlFor="job-requirements-heading"
+            className="text-jsMidnight text-sm"
+          >
+            Koptekst voor functie-eisen
+          </label>
+          <input
+            type="text"
+            name=""
+            id="job-requirements-heading"
+            placeholder="Wat jij meebrengt..."
+            className="mt-1 mb-4 w-full py-2 px-3 bg-jsOffWhite border border-slate-300 rounded-md text-sm"
+          />
+
           {/* functie-eisen */}
           <label htmlFor="job-requirements" className="text-jsMidnight text-sm">
             Functie-eisen (scheiden met een komma om opsomming te maken)
@@ -110,6 +129,21 @@ const JobCreationPage = () => {
             name=""
             id="job-requirements"
             placeholder="Afgeronde opleiding in techniek, 2 jaar ervaring, werken in ploegen"
+            className="mt-1 mb-4 w-full py-2 px-3 bg-jsOffWhite border border-slate-300 rounded-md text-sm"
+          />
+
+          {/* arbeidvoorwaarden KOPTEKST */}
+          <label
+            htmlFor="job-benefits-heading"
+            className="text-jsMidnight text-sm"
+          >
+            Koptekst voor arbeidsvoorwaarden
+          </label>
+          <input
+            type="text"
+            name=""
+            id="job-benefits-heading"
+            placeholder="Wie bieden..."
             className="mt-1 mb-4 w-full py-2 px-3 bg-jsOffWhite border border-slate-300 rounded-md text-sm"
           />
 
@@ -158,7 +192,7 @@ const JobCreationPage = () => {
             id="level"
             className="mt-1 mb-4 w-full py-2 px-3 bg-jsOffWhite border border-slate-300 rounded-md text-sm"
           >
-            <option value="junior">NVT.</option>
+            <option value="junior">NVT</option>
             <option value="junior">Junior</option>
             <option value="medior">Medior</option>
             <option value="senior">Senior</option>

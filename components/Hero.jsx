@@ -30,9 +30,9 @@ const Hero = () => {
             className="w-fit"
           />
           <LinkButton
-            href="/werknemers"
+            href="/werkgevers"
             label="vind jouw kandidaat"
-            variant="primary"
+            variant="tertiary"
             className="w-fit"
           />
         </div>

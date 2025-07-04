@@ -3,7 +3,7 @@
     "$id": "1a2b3c4d",
     "vacatureNummer": "IND-001",
     "vacatureTitel": "Onderhoudsmonteur",
-    "subTitel": "Technische dienst",
+    "subTitel": "3 ploegendienst",
     "introductie": "Heb jij twee rechterhanden en een passie voor techniek? Kom werken bij een modern productiebedrijf in de regio!",
     "functieomschrijving": "Als onderhoudsmonteur ben je verantwoordelijk voor het preventief en correctief onderhoud aan ons machinepark. Je werkt samen met collega’s uit het technische team en zorgt dat storingen snel en efficiënt worden opgelost.",
     "functieEisen": [
@@ -12,26 +12,28 @@
       "Bekend met hydrauliek en pneumatiek",
       "Bereid om in ploegendienst te werken"
     ],
+    "eisenKoptekst": "Jij brengt mee...",
     "arbeidsvoorwaarden": [
       "Salaris tussen €2.800 en €3.400 per maand",
       "25 vakantiedagen en 13 ATV-dagen",
       "Reiskostenvergoeding",
       "Doorgroeimogelijkheden en opleidingen"
     ],
+    "voorwaardenKoptekst": "Wij bieden...",
     "categorie": "techniek",
     "standplaats": "Eindhoven",
     "opleiding": "MBO",
     "niveau": "medior",
     "salaris": "€2.800 - €3.400",
     "uren": 40,
-    "featured": false,
+    "featured": true,
     "werkgever": "TechnoPro BV"
   },
   {
     "$id": "2e3f4g5h",
     "vacatureNummer": "IND-002",
     "vacatureTitel": "Procesoperator",
-    "subTitel": "Chemische industrie",
+    "subTitel": "2 ploegendienst",
     "introductie": "Wil jij werken met geavanceerde installaties in een schone en veilige omgeving? Dan is dit jouw kans!",
     "functieomschrijving": "In deze rol bewaak je het productieproces en zorg je dat de installaties optimaal functioneren. Je stuurt bij waar nodig en voert kwaliteitscontroles uit.",
     "functieEisen": [
@@ -40,12 +42,14 @@
       "Veiligheidsbewust en nauwkeurig",
       "Bereid om in 5-ploegendienst te werken"
     ],
+    "eisenKoptekst": "Jij hebt in huis...",
     "arbeidsvoorwaarden": [
       "Salaris tot €3.800 per maand inclusief ploegentoeslag",
       "8% vakantiegeld",
       "Pensioenregeling",
       "Uitgebreid inwerkprogramma"
     ],
+    "voorwaardenKoptekst": "Wat je van ons mag verwachten...",
     "categorie": "productie",
     "standplaats": "Geleen",
     "opleiding": "MBO",
@@ -59,7 +63,7 @@
     "$id": "3h4i5j6k",
     "vacatureNummer": "IND-003",
     "vacatureTitel": "Kwaliteitsmedewerker",
-    "subTitel": "Voedingsmiddelenindustrie",
+    "subTitel": "Dagdienst",
     "introductie": "Ben jij scherp op kwaliteit en heb je een oog voor detail? Dan zoeken wij jou!",
     "functieomschrijving": "Je bewaakt de kwaliteit van onze producten door steekproeven en controles. Je rapporteert afwijkingen en denkt mee over verbeteringen.",
     "functieEisen": [
@@ -68,19 +72,21 @@
       "Proactieve houding",
       "Goede communicatieve vaardigheden"
     ],
+    "eisenKoptekst": "Wat we zoeken...",
     "arbeidsvoorwaarden": [
       "Salaris tussen €2.700 en €3.500",
       "25 vakantiedagen",
       "Collectieve ziektekostenverzekering",
       "Korting op onze producten"
     ],
+    "voorwaardenKoptekst": "Wat wij jou bieden...",
     "categorie": "kwaliteit",
     "standplaats": "Almere",
     "opleiding": "HBO",
     "niveau": "medior",
     "salaris": "€2.700 - €3.500",
     "uren": 40,
-    "featured": false,
+    "featured": true,
     "werkgever": "Fresh&Safe Food BV"
   },
   {
@@ -96,12 +102,14 @@
       "Fysiek in goede conditie",
       "Ervaring is niet vereist, wel een plus"
     ],
+    "eisenKoptekst": "Jij beschikt over...",
     "arbeidsvoorwaarden": [
       "Salaris vanaf €2.300 per maand",
       "Reiskostenvergoeding",
       "Werk in een gezellig team",
       "Kans op vast dienstverband"
     ],
+    "voorwaardenKoptekst": "Dit krijg je van ons...",
     "categorie": "productie",
     "standplaats": "Zwolle",
     "opleiding": "VMBO",
@@ -115,7 +123,7 @@
     "$id": "5n6o7p8q",
     "vacatureNummer": "IND-005",
     "vacatureTitel": "Teamleider Logistiek",
-    "subTitel": "Distributiecentrum",
+    "subTitel": "2 ploegendienst",
     "introductie": "Wil jij leidinggeven aan een enthousiast team in een snelgroeiende organisatie? Dan zoeken wij jou als teamleider!",
     "functieomschrijving": "Je stuurt het logistieke team aan, bewaakt processen en zorgt voor een efficiënte doorstroom van goederen binnen het magazijn.",
     "functieEisen": [
@@ -124,26 +132,28 @@
       "Goede kennis van WMS-systemen",
       "Stressbestendig en oplossingsgericht"
     ],
+    "eisenKoptekst": "Jij neemt mee...",
     "arbeidsvoorwaarden": [
       "Salaris tot €3.900 per maand",
       "8% vakantiegeld",
       "Leidinggevende functie met verantwoordelijkheid",
       "Mogelijkheid tot het volgen van trainingen"
     ],
+    "voorwaardenKoptekst": "Wat wij jou bieden...",
     "categorie": "logistiek",
     "standplaats": "Tilburg",
     "opleiding": "MBO",
     "niveau": "senior",
     "salaris": "€3.200 - €3.900",
     "uren": 40,
-    "featured": false,
+    "featured": true,
     "werkgever": "Move-It Logistics"
   },
   {
     "$id": "6p7q8r9s",
     "vacatureNummer": "IND-006",
     "vacatureTitel": "Werkvoorbereider",
-    "subTitel": "Metaalindustrie",
+    "subTitel": "Dagdienst",
     "introductie": "Ben jij een organisatorisch talent met een passie voor techniek? Word werkvoorbereider bij een toonaangevend metaalbedrijf.",
     "functieomschrijving": "Je bereidt projecten voor, stelt planningen op en zorgt dat materialen en documentatie beschikbaar zijn. Je bent de schakel tussen engineering en productie.",
     "functieEisen": [
@@ -152,12 +162,14 @@
       "Ervaring met ERP-systemen",
       "Goede planningsvaardigheden"
     ],
+    "eisenKoptekst": "Wat jij meebrengt...",
     "arbeidsvoorwaarden": [
       "Salaris tussen €3.000 en €4.000",
       "Laptop en telefoon van de zaak",
       "25 vakantiedagen",
       "Doorgroeimogelijkheden binnen het bedrijf"
     ],
+    "voorwaardenKoptekst": "Dit kun je verwachten...",
     "categorie": "techniek",
     "standplaats": "Apeldoorn",
     "opleiding": "HBO",

@@ -1,9 +1,17 @@
 import { FaRegCircleCheck } from "react-icons/fa6";
 
-const ListCard = ({ title = "heading", list, iconColor }) => {
+const ListCard = ({
+  title = "heading",
+  list,
+  iconColor,
+  eisenKoptekst,
+  voorwaardenKoptekst,
+}) => {
   return (
     <div className="mb-8 bg-white border border-slate-300 p-6 rounded-md shadow-sm">
-      <h2 className="text-xl font-semibold mb-5">{title}</h2>
+      <h2 className="text-xl font-semibold mb-4">{title}</h2>
+
+      <p className="text-jsText mb-3">{eisenKoptekst || voorwaardenKoptekst}</p>
 
       {/* render list */}
       <ul className="flex flex-col gap-3">
