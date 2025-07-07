@@ -39,6 +39,7 @@ const JobCreationPage = () => {
             id="title"
             placeholder="Procesoperator"
             className="mt-1 mb-4 w-full py-2 px-3 bg-jsOffWhite border border-slate-300 rounded-md text-sm"
+            required
           />
 
           {/* vacature SUBtitel */}
@@ -55,6 +56,21 @@ const JobCreationPage = () => {
             <option value="3-ploegen">3 ploegendienst</option>
             <option value="4-ploegen">4 ploegendienst</option>
             <option value="5-ploegen">5 ploegendienst</option>
+          </select>
+
+          {/* vacature Categorie */}
+          <label htmlFor="category" className="text-jsMidnight text-sm">
+            Categorie
+          </label>
+          <select
+            name=""
+            id="category"
+            className="mt-1 mb-4 w-full py-2 px-3 bg-jsOffWhite border border-slate-300 rounded-md text-sm"
+          >
+            <option value="techniek">techniek</option>
+            <option value="productie">productie</option>
+            <option value="kwaliteit">kwaliteit</option>
+            <option value="logistiek">logistiek</option>
           </select>
 
           {/* werkgever */}
