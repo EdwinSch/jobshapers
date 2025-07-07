@@ -1,4 +1,4 @@
-import jobs from "@/data/jobsCollection.json";
+// import jobs from "@/data/jobsCollection.json";
 import getAllJobs from "../actions/getAllJobs";
 import JobListItem from "@/components/JobListItem";
 import { FaMagnifyingGlass } from "react-icons/fa6";

@@ -59,11 +59,13 @@ const MobileMenu = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
       <div className="flex gap-4">
         <LinkButton
           variant="primary"
+          href="/login"
           label="sign-in"
           className="w-24 text-center"
         />
         <LinkButton
           variant="secondary"
+          href="/createjob"
           label="add job"
           className="w-24 text-center"
         />
