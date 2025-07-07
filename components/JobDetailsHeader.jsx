@@ -1,4 +1,5 @@
 import JobDetailsCard from "./JobDetailsCard";
+import { formatDate } from "@/app/actions/formatDate";
 
 const JobDetailsHeader = ({ jobDetails }) => {
   return (
@@ -11,7 +12,9 @@ const JobDetailsHeader = ({ jobDetails }) => {
         <p className="mb-1 text-jsMidnight font-semibold">
           {jobDetails.subTitel}
         </p>
-        <p className="text-xs text-jsText mb-6">Geplaatst op: 01-01-2025</p>
+        <p className="text-xs text-jsText mb-6">
+          Geplaatst op: {formatDate(jobDetails.$createdAt)}
+        </p>
         {/* job description */}
         <p>{jobDetails.introductie}</p>
       </div>

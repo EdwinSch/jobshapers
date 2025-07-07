@@ -6,6 +6,7 @@ import ActionButton from "@/components/ActionButton";
 
 const JobsPage = async () => {
   const jobs = await getAllJobs();
+  // console.log(jobs);
 
   return (
     <>

@@ -1,11 +1,14 @@
-import jobs from "@/data/jobsCollection.json";
+// import jobs from "@/data/jobsCollection.json";
+import getSingleJob from "@/app/actions/getSingleJob";
 import LinkButton from "@/components/LinkButton";
 import JobDetailsHeader from "@/components/JobDetailsHeader";
 import JobDetailsBody from "@/components/JobDetailsBody";
 
 const JobDetailPage = async ({ params }) => {
   const { id } = await params;
-  const jobDetails = jobs.find((job) => job.$id === id);
+  const jobDetails = await getSingleJob(id);
+
+  // console.log(jobDetails);
 
   return (
     <>
