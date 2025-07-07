@@ -1,7 +1,7 @@
 import { twMerge } from "tailwind-merge";
 
 const variantClasses = {
-  primary: "text-sm border-slate-300 border bg-white hover:bg-jsGreen/10",
+  primary: "text-sm border-slate-300 border bg-jsOffWhite hover:bg-jsGreen/10",
   blue: "text-sm bg-jsBlue text-white border border-jsBlue hover:bg-[#163ea5]",
   green:
     "text-sm bg-jsGreen text-white border border-jsGreen hover:bg-[#33b68b]",
@@ -12,6 +12,9 @@ const ActionButton = ({
   type = "button",
   variant = "primary",
   className = "",
+  onClick = () => {
+    console.log("clicked");
+  },
   children,
 }) => {
   const mergedClassName = twMerge(
@@ -21,7 +24,7 @@ const ActionButton = ({
   );
 
   return (
-    <button type={type} className={mergedClassName}>
+    <button type={type} className={mergedClassName} onClick={onClick}>
       {label}
       {children}
     </button>

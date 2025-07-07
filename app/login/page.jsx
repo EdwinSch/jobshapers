@@ -1,8 +1,32 @@
+"use client";
+
 import ActionButton from "@/components/ActionButton";
+import createSession from "../actions/createSession";
+import { useActionState } from "react";
+import { useEffect } from "react";
+import { toast } from "react-toastify";
+import { useRouter } from "next/navigation";
 
 const LoginPage = () => {
+  const [state, formAction] = useActionState(createSession, {});
+
+  const router = useRouter();
+
+  useEffect(() => {
+    if (state.error) {
+      toast.error(state.error);
+    }
+    if (state.success) {
+      toast.success("Login succesvol");
+      router.push("/");
+    }
+  }, [state]);
+
   return (
-    <form className="m-10 mx-auto max-w-xl p-6 bg-white border border-slate-300 rounded-md">
+    <form
+      action={formAction}
+      className="m-10 mx-auto max-w-xl p-6 bg-white border border-slate-300 rounded-md shadow-md"
+    >
       <h1 className="text-center mb-4 font-semibold">Login to JOBSHAPERS</h1>
 
       {/* email*/}
