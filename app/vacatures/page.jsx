@@ -1,9 +1,12 @@
 import jobs from "@/data/jobsCollection.json";
+import getAllJobs from "../actions/getAllJobs";
 import JobListItem from "@/components/JobListItem";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import ActionButton from "@/components/ActionButton";
 
-const JobsPage = () => {
+const JobsPage = async () => {
+  const jobs = await getAllJobs();
+
   return (
     <>
       {/* search section */}
