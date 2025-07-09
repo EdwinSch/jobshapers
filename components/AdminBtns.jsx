@@ -19,9 +19,8 @@ const AdminBtns = () => {
       const result = await checkAuth();
       setIsAuthenticated(result.isAuthenticated);
       console.log(isAuthenticated);
-
-      fetchAuthStatus();
     };
+    fetchAuthStatus();
   }, []);
 
   const handleLogout = async () => {
@@ -42,8 +41,13 @@ const AdminBtns = () => {
       )}
 
       {/* Sign-out */}
-
-      <ActionButton label="sign out" variant="primary" onClick={handleLogout} />
+      {isAuthenticated && (
+        <ActionButton
+          label="sign out"
+          variant="primary"
+          onClick={handleLogout}
+        />
+      )}
 
       {/* Post Job */}
       {isAuthenticated && (

@@ -7,7 +7,6 @@ async function checkAuth() {
   const sessionCookie = cookies().get("appwrite-session");
 
   if (!sessionCookie) {
-    ß;
     return {
       isAuthenticated: false,
     };
