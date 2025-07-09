@@ -1,3 +1,5 @@
+"use client";
+
 import ActionButton from "@/components/ActionButton";
 
 const JobCreationPage = () => {

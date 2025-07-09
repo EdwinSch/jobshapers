@@ -1,17 +1,34 @@
+"use client";
+
 import LinkButton from "./LinkButton";
 import ActionButton from "./ActionButton";
 import destroySession from "@/app/actions/destroySession";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
+import checkAuth from "@/app/actions/checkAuth";
+import { useState } from "react";
+import { useEffect } from "react";
 
 const AdminBtns = () => {
   const router = useRouter();
+
+  const [isAuthenticated, setIsAuthenticated] = useState(null);
+
+  useEffect(() => {
+    const fetchAuthStatus = async () => {
+      const result = await checkAuth();
+      setIsAuthenticated(result.isAuthenticated);
+      console.log(isAuthenticated);
+
+      fetchAuthStatus();
+    };
+  }, []);
 
   const handleLogout = async () => {
     const { success, error } = await destroySession();
     if (success) {
       router.push("/login");
-      toast.success("succesvol uitgelogd");
+      toast.success("uitgelogd");
     } else {
       toast.error(error);
     }
@@ -20,13 +37,18 @@ const AdminBtns = () => {
   return (
     <div className="hidden gap-4 md:flex">
       {/* Sign-in */}
-      <LinkButton label="sign in" href="/login" variant="primary" />
+      {!isAuthenticated && (
+        <LinkButton label="sign in" href="/login" variant="primary" />
+      )}
 
       {/* Sign-out */}
+
       <ActionButton label="sign out" variant="primary" onClick={handleLogout} />
 
-      {/* Add Job */}
-      <LinkButton label="post job" href="/createjob" variant="secondary" />
+      {/* Post Job */}
+      {isAuthenticated && (
+        <LinkButton label="post job" href="/createjob" variant="secondary" />
+      )}
     </div>
   );
 };
