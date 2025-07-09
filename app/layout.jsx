@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import AuthWrapper from "@/components/AuthWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,13 +16,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} bg-white`}>
-        <ToastContainer />
-        <Header />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <AuthWrapper>
+      <html lang="en">
+        <body className={`${inter.className} bg-white`}>
+          <ToastContainer />
+          <Header />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </AuthWrapper>
   );
 }

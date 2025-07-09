@@ -5,7 +5,8 @@ import { createSessionClient } from "@/config/appwrite";
 
 async function destroySession() {
   // Retrieve session cookie
-  const sessionCookie = cookies().get("appwrite-session");
+  const cookieStore = await cookies();
+  const sessionCookie = cookieStore.get("appwrite-session");
 
   if (!sessionCookie) {
     return {
@@ -18,7 +19,7 @@ async function destroySession() {
     // Delete session
     await account.deleteSession("current");
     // Delete cookie
-    cookies().delete("appwrite-session");
+    cookieStore.delete("appwrite-session");
     return {
       success: true,
     };

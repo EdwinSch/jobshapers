@@ -5,27 +5,19 @@ import ActionButton from "./ActionButton";
 import destroySession from "@/app/actions/destroySession";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
-import checkAuth from "@/app/actions/checkAuth";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useAuth } from "@/context/authContext";
 
 const AdminBtns = () => {
   const router = useRouter();
 
-  const [isAuthenticated, setIsAuthenticated] = useState(null);
+  const { isAuthenticated, setIsAuthenticated, currentUser } = useAuth();
 
-  useEffect(() => {
-    const fetchAuthStatus = async () => {
-      const result = await checkAuth();
-      setIsAuthenticated(result.isAuthenticated);
-      console.log(isAuthenticated);
-    };
-    fetchAuthStatus();
-  }, []);
+  console.log(currentUser);
 
   const handleLogout = async () => {
     const { success, error } = await destroySession();
     if (success) {
+      setIsAuthenticated(false);
       router.push("/login");
       toast.success("uitgelogd");
     } else {
