@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
     <AuthWrapper>
       <html lang="en">
         <body className={`${inter.className} bg-white`}>
-          <ToastContainer />
+          <ToastContainer position="top-center" autoClose={2000} />
           <Header />
           {children}
           <Footer />

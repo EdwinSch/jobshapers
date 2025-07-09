@@ -10,9 +10,7 @@ import { useAuth } from "@/context/authContext";
 const AdminBtns = () => {
   const router = useRouter();
 
-  const { isAuthenticated, setIsAuthenticated, currentUser } = useAuth();
-
-  console.log(currentUser);
+  const { isAuthenticated, setIsAuthenticated } = useAuth();
 
   const handleLogout = async () => {
     const { success, error } = await destroySession();
