@@ -6,8 +6,11 @@ import {
   FaBuilding,
   FaPhone,
 } from "react-icons/fa6";
+import { useAuth } from "@/context/authContext";
 
 const MobileMenu = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
+  const { isAuthenticated, setIsAuthenticated } = useAuth();
+
   return (
     <div
       className={`${
@@ -56,20 +59,29 @@ const MobileMenu = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
 
       <hr className="my-6 border border-jsText" />
 
-      <div className="flex gap-4">
-        <LinkButton
-          variant="primary"
-          href="/login"
-          label="sign-in"
-          className="w-24 text-center"
-        />
-        <LinkButton
-          variant="secondary"
-          href="/createjob"
-          label="add job"
-          className="w-24 text-center"
-        />
-      </div>
+      <ul className="flex gap-4">
+        {!isAuthenticated && (
+          <li onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+            <LinkButton
+              variant="primary"
+              href="/login"
+              label="sign-in"
+              className="w-24 text-center"
+            />
+          </li>
+        )}
+
+        {isAuthenticated && (
+          <li onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+            <LinkButton
+              variant="secondary"
+              href="/createjob"
+              label="add job"
+              className="w-24 text-center"
+            />
+          </li>
+        )}
+      </ul>
     </div>
   );
 };

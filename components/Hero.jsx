@@ -6,11 +6,11 @@ const Hero = () => {
   return (
     <section className="py-8 sm:py-12 lg:py-16 flex flex-col lg:flex-row items-center gap-10 sm:gap-14 lg:gap-20">
       <article>
-        <h1 className="text-3xl sm:text-4xl font-bold text-jsBlue uppercase">
+        <h1 className="text-3xl sm:text-4xl font-extrabold text-jsBlue uppercase">
           jobshapers
         </h1>
         <h2 className="text-xl sm:text-2xl font-semibold text-jsGreen">
-          Wij gaan pas verder als het écht klopt.
+          Elke carrière verdient de juiste vorm
         </h2>
         <p className="text-jsMidnight text-base mt-4">
           Op zoek naar een baan die écht bij je past of naar nieuw talent voor

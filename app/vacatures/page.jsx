@@ -1,4 +1,3 @@
-// import jobs from "@/data/jobsCollection.json";
 import getAllJobs from "../actions/getAllJobs";
 import JobListItem from "@/components/JobListItem";
 import { FaMagnifyingGlass } from "react-icons/fa6";
@@ -35,10 +34,10 @@ const JobsPage = async () => {
           {/* filter container */}
           <div className="flex md:flex-row flex-wrap items-center md:items-center gap-3">
             <p className="text-jsText text-sm">Filter per categorie:</p>
-            <ActionButton label={"processindustrie"} className="text-sm" />
+            {/* <ActionButton label={"processindustrie"} className="text-sm" />
             <ActionButton label={"junior"} className="text-sm" />
             <ActionButton label={"medior"} className="text-sm" />
-            <ActionButton label={"senior"} className="text-sm" />
+            <ActionButton label={"senior"} className="text-sm" /> */}
           </div>
         </div>
       </div>
