@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import SellingPointCard from "@/components/SellingPointCard";
+import TopJobs from "@/components/TopJobs";
 
 import { FaLink, FaUsers, FaCircleQuestion } from "react-icons/fa6";
 
@@ -68,6 +69,9 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+
+      {/* Top vacatures */}
+      <TopJobs />
     </main>
   );
 }
