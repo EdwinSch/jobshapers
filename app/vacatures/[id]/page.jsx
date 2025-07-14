@@ -8,7 +8,7 @@ const JobDetailPage = async ({ params }) => {
   const { id } = await params;
   const jobDetails = await getSingleJob(id);
 
-  // console.log(jobDetails);
+  console.log(jobDetails);
 
   return (
     <>

@@ -12,9 +12,7 @@ const ActionButton = ({
   type = "button",
   variant = "primary",
   className = "",
-  onClick = () => {
-    console.log("clicked");
-  },
+  onClick,
   children,
 }) => {
   const mergedClassName = twMerge(
