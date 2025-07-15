@@ -10,7 +10,6 @@ async function createJob(previousState, formData) {
 
   try {
     const { user } = await checkAuth();
-    console.log(user);
 
     if (!user) {
       return {
@@ -36,6 +35,7 @@ async function createJob(previousState, formData) {
       process.env.NEXT_PUBLIC_APPWRITE_COLLECTION_JOBS,
       ID.unique(),
       {
+        postedBy: user.name,
         vacatureNummer: formData.get("vacatureNummer"),
         vacatureTitel: formData.get("vacatureTitel"),
         subTitel: formData.get("subTitel"),

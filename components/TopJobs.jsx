@@ -23,44 +23,46 @@ const TopJobs = async () => {
         top vacatures
       </h2>
 
-      <section className="flex flex-col md:flex-row gap-6 my-12">
-        {featuredJobs.map((job) => {
-          return (
-            <article
-              key={job.$id}
-              className="flex-1 rounded-md border border-slate-300 shadow-md"
-            >
-              <Link
-                href={`/vacatures/${job.$id}`}
-                className="p-6 block  bg-jsOffWhite hover:bg-jsGreen/10 duration-200"
+      {featuredJobs.length > 0 && (
+        <section className="flex flex-col md:flex-row gap-6 my-12">
+          {featuredJobs.map((job) => {
+            return (
+              <article
+                key={job.$id}
+                className="flex-1 rounded-md border border-slate-300 shadow-md"
               >
-                <h3 className="text-xl text-jsMidnight font-bold mb-3">
-                  {job.vacatureTitel}
-                </h3>
+                <Link
+                  href={`/vacatures/${job.$id}`}
+                  className="p-6 block  bg-jsOffWhite hover:bg-jsGreen/10 duration-200"
+                >
+                  <h3 className="text-xl text-jsMidnight font-bold mb-3">
+                    {job.vacatureTitel}
+                  </h3>
 
-                <div className="flex flex-col gap-1">
-                  <p className="flex items-center gap-1.5">
-                    <FaLocationDot className="text-jsGreen" />
-                    <span className="text-jsText">{job.standplaats}</span>
-                  </p>
-                  <p className="flex items-center gap-1.5">
-                    <FaGraduationCap className="text-jsGreen" />
-                    <span className="text-jsText">{job.opleiding}</span>
-                  </p>
-                  <p className="flex items-center gap-1.5">
-                    <FaClock className="text-jsGreen" />
-                    <span className="text-jsText">{job.uren} uur</span>
-                  </p>
-                  <p className="flex items-center gap-1.5">
-                    <FaEuroSign className="text-jsGreen" />
-                    <span className="text-jsText">{job.salaris}</span>
-                  </p>
-                </div>
-              </Link>
-            </article>
-          );
-        })}
-      </section>
+                  <div className="flex flex-col gap-1">
+                    <p className="flex items-center gap-1.5">
+                      <FaLocationDot className="text-jsGreen" />
+                      <span className="text-jsText">{job.standplaats}</span>
+                    </p>
+                    <p className="flex items-center gap-1.5">
+                      <FaGraduationCap className="text-jsGreen" />
+                      <span className="text-jsText">{job.opleiding}</span>
+                    </p>
+                    <p className="flex items-center gap-1.5">
+                      <FaClock className="text-jsGreen" />
+                      <span className="text-jsText">{job.uren} uur</span>
+                    </p>
+                    <p className="flex items-center gap-1.5">
+                      <FaEuroSign className="text-jsGreen" />
+                      <span className="text-jsText">{job.salaris}</span>
+                    </p>
+                  </div>
+                </Link>
+              </article>
+            );
+          })}
+        </section>
+      )}
 
       <LinkButton
         href="/vacatures"
