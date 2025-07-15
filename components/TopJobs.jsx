@@ -29,11 +29,11 @@ const TopJobs = async () => {
             return (
               <article
                 key={job.$id}
-                className="flex-1 rounded-md border border-slate-300 shadow-md"
+                className="flex-1 border rounded-md border-slate-300 shadow-md"
               >
                 <Link
                   href={`/vacatures/${job.$id}`}
-                  className="p-6 block  bg-jsOffWhite hover:bg-jsGreen/10 duration-200"
+                  className="p-6 block  bg-jsOffWhite hover:bg-jsGreen/10 duration-200 rounded-md"
                 >
                   <h3 className="text-xl text-jsMidnight font-bold mb-3">
                     {job.vacatureTitel}

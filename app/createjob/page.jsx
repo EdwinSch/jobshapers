@@ -183,7 +183,7 @@ const JobCreationPage = () => {
             type="text"
             name="voorwaardenKoptekst"
             id="voorwaardenKoptekst"
-            placeholder="Wie bieden..."
+            placeholder="Wij bieden..."
             className="mt-1 mb-4 w-full py-2 px-3 bg-jsOffWhite border border-slate-300 rounded-md text-sm"
           />
 
