@@ -1,14 +1,26 @@
 import getAllJobs from "../actions/getAllJobs";
 import JobListItem from "@/components/JobListItem";
-import { FaMagnifyingGlass } from "react-icons/fa6";
-import ActionButton from "@/components/ActionButton";
+import SearchAndFilter from "@/components/SearchAndFilter";
 
-const JobsPage = async () => {
+const JobsPage = async ({ searchParams }) => {
   const jobs = await getAllJobs();
   // sort jobs new to old
   const sortedJobs = jobs.sort(
     (a, b) => new Date(b.$createdAt) - new Date(a.$createdAt)
   );
+
+  // Filter jobs based on text search parameter
+  const resolvedSearchParams = await searchParams;
+  const searchTerm = resolvedSearchParams?.search || "";
+  const filteredJobs = searchTerm
+    ? sortedJobs.filter((job) => {
+        const searchLower = searchTerm.toLowerCase();
+        return (
+          job.vacatureTitel?.toLowerCase().includes(searchLower) ||
+          job.standplaats?.toLowerCase().includes(searchLower)
+        );
+      })
+    : sortedJobs;
 
   return (
     <>
@@ -18,31 +30,7 @@ const JobsPage = async () => {
           Vacatures
         </h1>
 
-        <div className="bg-jsOffWhite p-6 border border-slate-300 rounded-md">
-          {/* search container */}
-          <form className="flex gap-2 mb-4">
-            <input
-              type="text"
-              name=""
-              id=""
-              placeholder="Zoek op functie of trefwoord"
-              className="w-full bg-white py-2 px-3 rounded-md border border-slate-300 text-sm"
-            />
-
-            <ActionButton type="submit" variant="green">
-              <FaMagnifyingGlass />
-            </ActionButton>
-          </form>
-
-          {/* filter container */}
-          <div className="flex md:flex-row flex-wrap items-center md:items-center gap-3">
-            <p className="text-jsText text-sm">Filter per categorie:</p>
-            {/* <ActionButton label={"processindustrie"} className="text-sm" />
-            <ActionButton label={"junior"} className="text-sm" />
-            <ActionButton label={"medior"} className="text-sm" />
-            <ActionButton label={"senior"} className="text-sm" /> */}
-          </div>
-        </div>
+        <SearchAndFilter />
       </div>
 
       {/* vacature section */}
@@ -52,18 +40,21 @@ const JobsPage = async () => {
             vacature overzicht
           </h2>
           <p className="text-sm text-jsText mb-6">
-            {sortedJobs.length} vacatures beschikbaar
+            {filteredJobs.length} vacature{filteredJobs.length !== 1 ? "s" : ""}{" "}
+            {searchTerm ? `gevonden voor "${searchTerm}"` : "beschikbaar"}
           </p>
 
           {/* vacature mapping */}
           <section>
-            {sortedJobs.length > 0 ? (
-              sortedJobs.map((job) => {
+            {filteredJobs.length > 0 ? (
+              filteredJobs.map((job) => {
                 return <JobListItem key={job.$id} {...job} />;
               })
             ) : (
               <p className="text-jsGreen font-semibold">
-                Er zijn momenteel geen vacatures beschikbaar.
+                {searchTerm
+                  ? `Geen vacatures gevonden voor "${searchTerm}".`
+                  : "Er zijn momenteel geen vacatures beschikbaar."}
               </p>
             )}
           </section>
