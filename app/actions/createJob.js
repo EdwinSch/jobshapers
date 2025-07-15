@@ -10,6 +10,7 @@ async function createJob(previousState, formData) {
 
   try {
     const { user } = await checkAuth();
+    console.log(user);
 
     if (!user) {
       return {

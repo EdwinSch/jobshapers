@@ -5,7 +5,10 @@ import ActionButton from "@/components/ActionButton";
 
 const JobsPage = async () => {
   const jobs = await getAllJobs();
-  // console.log(jobs);
+  // sort jobs new to old
+  const sortedJobs = jobs.sort(
+    (a, b) => new Date(b.$createdAt) - new Date(a.$createdAt)
+  );
 
   return (
     <>
@@ -49,13 +52,13 @@ const JobsPage = async () => {
             vacature overzicht
           </h2>
           <p className="text-sm text-jsText mb-6">
-            {jobs.length} vacatures beschikbaar
+            {sortedJobs.length} vacatures beschikbaar
           </p>
 
           {/* vacature mapping */}
           <section>
-            {jobs.length > 0 ? (
-              jobs.map((job) => {
+            {sortedJobs.length > 0 ? (
+              sortedJobs.map((job) => {
                 return <JobListItem key={job.$id} {...job} />;
               })
             ) : (
