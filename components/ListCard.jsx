@@ -1,5 +1,3 @@
-import { FaRegCircleCheck } from "react-icons/fa6";
-
 const ListCard = ({
   title = "heading",
   list,
@@ -18,7 +16,11 @@ const ListCard = ({
         {list.map((item, idx) => {
           return (
             <li key={idx} className="flex items-center gap-2">
-              <FaRegCircleCheck className={iconColor} />
+              <img
+                src={"/icon.png"}
+                className="w-4 h-4"
+                alt="jobshapers icon logo"
+              />
               <span className="text-jsText">{item}</span>
             </li>
           );

@@ -29,7 +29,7 @@ const ManageJobsClient = ({ jobs }) => {
         if (result.success) {
           // Remove the job from the local state
           setJobList((prev) => prev.filter((job) => job.$id !== jobId));
-          toast.success("Vacature succesvol verwijderd");
+          toast.success("Vacature verwijderd");
         } else {
           toast.error("Er is een fout opgetreden bij het verwijderen");
         }

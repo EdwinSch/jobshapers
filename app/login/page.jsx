@@ -20,15 +20,15 @@ const LoginPage = () => {
       toast.error(state.error);
     }
     if (state.success) {
-      toast.success("Login succesvol");
-      
+      toast.success("Je bent ingelogd");
+
       // Update auth context after successful login
       const updateAuthState = async () => {
         const { isAuthenticated, user } = await checkAuth();
         setIsAuthenticated(isAuthenticated);
         setCurrentUser(user);
       };
-      
+
       updateAuthState();
       router.push("/");
     }
