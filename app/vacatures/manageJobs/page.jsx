@@ -32,14 +32,12 @@ const ManageJobsPage = async () => {
           </p>
         </div>
 
-        <div className="bg-white rounded-lg shadow-sm border border-slate-200 p-6">
-          <p className="text-sm text-jsText mb-6">
-            {sortedJobs.length} vacature{sortedJobs.length !== 1 ? "s" : ""} in
-            database
-          </p>
+        <p className="text-sm text-jsText mb-4">
+          {sortedJobs.length} vacature{sortedJobs.length !== 1 ? "s" : ""} in
+          database
+        </p>
 
-          <ManageJobsClient jobs={sortedJobs} />
-        </div>
+        <ManageJobsClient jobs={sortedJobs} />
       </div>
     </div>
   );

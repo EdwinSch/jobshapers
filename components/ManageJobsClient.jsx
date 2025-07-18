@@ -14,17 +14,21 @@ const ManageJobsClient = ({ jobs }) => {
   const router = useRouter();
 
   const handleDeleteJob = async (jobId, jobTitle) => {
-    if (!confirm(`Weet je zeker dat je de vacature "${jobTitle}" wilt verwijderen?`)) {
+    if (
+      !confirm(
+        `Weet je zeker dat je de vacature "${jobTitle}" wilt verwijderen?`
+      )
+    ) {
       return;
     }
 
     startTransition(async () => {
       try {
         const result = await deleteJob(jobId);
-        
+
         if (result.success) {
           // Remove the job from the local state
-          setJobList(prev => prev.filter(job => job.$id !== jobId));
+          setJobList((prev) => prev.filter((job) => job.$id !== jobId));
           toast.success("Vacature succesvol verwijderd");
         } else {
           toast.error("Er is een fout opgetreden bij het verwijderen");
@@ -49,55 +53,60 @@ const ManageJobsClient = ({ jobs }) => {
   }
 
   return (
-    <div className="space-y-4">
+    <section className="space-y-4">
       {jobList.map((job) => (
-        <div
+        <article
           key={job.$id}
-          className="border border-slate-200 rounded-lg p-4 hover:shadow-md transition-shadow"
+          className="flex flex-col md:flex-row gap-6 justify-between items-start md:items-center bg-white border border-slate-300 rounded-md p-6 shadow-md"
         >
-          <div className="flex justify-between items-start">
-            <div className="flex-1">
-              <h3 className="text-lg font-semibold text-jsMidnight mb-1">
+          {/* Info container */}
+          <div className="flex flex-col gap-0.5">
+            {/* title */}
+            <div className="mb-2 flex gap-3 items-center">
+              <h3 className="text-lg font-semibold text-jsMidnight">
                 {job.vacatureTitel}
               </h3>
-              <p className="text-jsText text-sm mb-2">
-                {job.standplaats} • {job.category}
-              </p>
-              <p className="text-jsText text-sm mb-2">
-                Werkgever: {job.werkgever}
-              </p>
-              <p className="text-xs text-slate-500">
-                Aangemaakt: {formatDate(job.$createdAt)}
-              </p>
               {job.featured && (
-                <span className="inline-block bg-jsGreen text-white text-xs px-2 py-1 rounded mt-2">
-                  Uitgelicht
+                <span className="block bg-jsGreen text-white text-xs p-1 rounded">
+                  Top vacature
                 </span>
               )}
             </div>
-            
-            <div className="flex space-x-2 ml-4">
-              <ActionButton
-                onClick={() => handleViewJob(job.$id)}
-                variant="blue"
-                className="!p-2 !px-3"
-              >
-                <FaEye />
-              </ActionButton>
-              
-              <ActionButton
-                onClick={() => handleDeleteJob(job.$id, job.vacatureTitel)}
-                variant="red"
-                className="!p-2 !px-3"
-                disabled={isPending}
-              >
-                <FaTrashAlt />
-              </ActionButton>
-            </div>
+
+            <p className="text-jsText text-sm">
+              Vacaturenummer: {job.vacatureNummer}
+            </p>
+            <p className="text-jsText text-sm">
+              Aangemaakt op: {formatDate(job.$createdAt)}
+            </p>
+            <p className="text-jsText text-sm">Werkgever: {job.werkgever}</p>
+            <p className="text-jsText text-sm">
+              Standplaats: {job.standplaats}
+            </p>
+            <p className="text-jsText text-sm">Categorie: {job.category}</p>
+
+            <p className="mt-2 text-xs text-slate-500 italic">
+              Aangemaakt door: {job.postedBy}
+            </p>
           </div>
-        </div>
+
+          {/* actions container */}
+          <div className="flex gap-3">
+            <ActionButton onClick={() => handleViewJob(job.$id)} variant="blue">
+              <FaEye />
+            </ActionButton>
+
+            <ActionButton
+              onClick={() => handleDeleteJob(job.$id, job.vacatureTitel)}
+              variant="destructive"
+              disabled={isPending}
+            >
+              <FaTrashAlt />
+            </ActionButton>
+          </div>
+        </article>
       ))}
-    </div>
+    </section>
   );
 };
 

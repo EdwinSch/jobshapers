@@ -5,7 +5,8 @@ const variantClasses = {
   blue: "text-sm bg-jsBlue text-white border border-jsBlue hover:bg-[#163ea5]",
   green:
     "text-sm bg-jsGreen text-white border border-jsGreen hover:bg-[#33b68b]",
-  red: "text-sm bg-red-500 text-white border border-red-500 hover:bg-red-600",
+  destructive:
+    "text-sm bg-red-500 text-white border border-red-500 hover:bg-red-600",
 };
 
 const ActionButton = ({
@@ -25,7 +26,12 @@ const ActionButton = ({
   );
 
   return (
-    <button type={type} className={mergedClassName} onClick={onClick} disabled={disabled}>
+    <button
+      type={type}
+      className={mergedClassName}
+      onClick={onClick}
+      disabled={disabled}
+    >
       {label}
       {children}
     </button>
