@@ -22,7 +22,7 @@ const deleteJob = async (jobId) => {
     
     // Revalidate relevant paths
     revalidatePath("/vacatures");
-    revalidatePath("/vacatures/manageJobs");
+    revalidatePath("/vacatures/manage");
     revalidatePath("/");
     
     return { success: true };
