@@ -41,6 +41,11 @@ const ManageJobsClient = ({ jobs }) => {
   };
 
   const handleViewJob = (jobId) => {
+    // Validate job ID before navigation
+    if (!jobId || typeof jobId !== 'string' || jobId.trim() === '') {
+      toast.error('Ongeldige vacature ID');
+      return;
+    }
     router.push(`/vacatures/${jobId}`);
   };
 

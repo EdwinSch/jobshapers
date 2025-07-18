@@ -15,7 +15,7 @@ const getAllJobs = async () => {
     return jobs;
   } catch (error) {
     console.log("failed to get jobs", error);
-    redirect("/error");
+    return [];
   }
 };
 

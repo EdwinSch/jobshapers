@@ -16,7 +16,7 @@ const getSingleJob = async (id) => {
     return singleJob;
   } catch (error) {
     console.log("failed to get this job", error);
-    redirect("/error");
+    return null;
   }
 };
 
