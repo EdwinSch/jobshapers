@@ -43,6 +43,15 @@ const AdminBtns = () => {
       {isAuthenticated && (
         <LinkButton label="post job" href="/createjob" variant="secondary" />
       )}
+
+      {/* Manage jobs */}
+      {isAuthenticated && (
+        <LinkButton
+          label="manage jobs"
+          href="/vacatures/managejobs"
+          variant="tertiary"
+        />
+      )}
     </div>
   );
 };
