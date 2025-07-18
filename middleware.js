@@ -12,5 +12,5 @@ export async function middleware(request) {
 }
 
 export const config = {
-  matcher: ["/createjob"],
+  matcher: ["/createjob", "/vacatures/managejobs"],
 };
