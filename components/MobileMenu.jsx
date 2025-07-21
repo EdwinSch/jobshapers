@@ -7,9 +7,25 @@ import {
   FaPhone,
 } from "react-icons/fa6";
 import { useAuth } from "@/context/authContext";
+import ActionButton from "./ActionButton";
+import destroySession from "@/app/actions/destroySession";
+import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
 
 const MobileMenu = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
   const { isAuthenticated, setIsAuthenticated } = useAuth();
+  const router = useRouter();
+
+  const handleLogout = async () => {
+    const { success, error } = await destroySession();
+    if (success) {
+      setIsAuthenticated(false);
+      router.push("/login");
+      toast.success("uitgelogd");
+    } else {
+      toast.error(error);
+    }
+  };
 
   return (
     <div
@@ -59,7 +75,7 @@ const MobileMenu = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
 
       <hr className="my-6 border border-jsText" />
 
-      <ul className="flex gap-4">
+      <ul className="flex flex-col gap-4">
         {!isAuthenticated && (
           <li onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             <LinkButton
@@ -73,11 +89,33 @@ const MobileMenu = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
 
         {isAuthenticated && (
           <li onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+            <ActionButton
+              label="sign out"
+              variant="primary"
+              onClick={handleLogout}
+              className="w-32"
+            />
+          </li>
+        )}
+
+        {isAuthenticated && (
+          <li onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             <LinkButton
               variant="secondary"
               href="/createjob"
               label="add job"
-              className="w-24 text-center"
+              className="w-32 text-center"
+            />
+          </li>
+        )}
+
+        {isAuthenticated && (
+          <li onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+            <LinkButton
+              variant="tertiary"
+              href="/vacatures/manage"
+              label="manage jobs"
+              className="w-32 text-center"
             />
           </li>
         )}

@@ -22,10 +22,6 @@ const JobCreationPage = () => {
   return (
     <div className="bg-jsOffWhite">
       <div className="mx-auto py-8 max-w-7xl px-4 md:px-6 lg:px-8">
-        <p className="mb-2 text-center text-red-600 font-semibold">
-          -- Protected Route --
-        </p>
-
         {/* form */}
         <form
           action={formAction}
