@@ -1,7 +1,6 @@
 "use server";
 
 import { createAdminClient } from "@/config/appwrite";
-import { redirect } from "next/navigation";
 
 const getAllJobs = async () => {
   try {

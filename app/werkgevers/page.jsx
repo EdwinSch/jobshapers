@@ -26,7 +26,7 @@ const EmployersPage = () => {
           Waarom kiezen voor JOBSHAPERS?
         </h2>
 
-        <section className="grid gap-6 grid-cols-1 md:grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))]">
+        <section className="justify-center grid gap-6 grid-cols-1 md:grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))]">
           <SellingPointCard
             icon={FaSuitcase}
             title="Diepgaande kennis van de markt"

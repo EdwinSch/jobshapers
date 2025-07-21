@@ -1,6 +1,6 @@
 import LinkButton from "./LinkButton";
 import Image from "next/image";
-import industryImg from "@/assets/industry.jpg";
+import people from "@/assets/people.png";
 
 const EmployersHero = () => {
   return (
@@ -36,15 +36,12 @@ const EmployersHero = () => {
         </div>
       </article>
 
-      <div className="relative w-[400px] h-[500px] shrink-0">
-        <Image
-          src={industryImg}
-          alt="Some alt text"
-          fill
-          className="object-cover rounded-xl shadow-imgShadow"
-          priority
-        />
-      </div>
+      <Image
+        src={people}
+        alt="mutliple people in a birds view"
+        className="imageStyle object-cover rounded-xl shadow-imgShadow grayscale"
+        priority
+      />
     </section>
   );
 };

@@ -8,7 +8,7 @@
   --color-jsText: #475569;
   --color-jsSubtext: #cbd5e1;
 
-  --shadow-imgShadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+  --shadow-imgShadow: 5px 5px 16px rgba(0, 0, 0, 0.2);
 }
 
 .inspect {
@@ -21,4 +21,13 @@
 
 .fader-delay-200 {
   animation-delay: 200ms;
+}
+
+.imageStyle {
+  width: 400px;
+  height: 500px;
+
+  @media only screen and (max-width: 300px) {
+    height: 300px;
+  }
 }

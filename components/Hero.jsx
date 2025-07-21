@@ -1,6 +1,6 @@
 import LinkButton from "./LinkButton";
 import Image from "next/image";
-import profilePicture from "@/assets/businessman.jpg";
+import handshake from "@/assets/handshake.png";
 
 const Hero = () => {
   return (
@@ -38,15 +38,12 @@ const Hero = () => {
         </div>
       </article>
 
-      <div className="relative w-[400px] h-[500px] shrink-0">
-        <Image
-          src={profilePicture}
-          alt="profile picture"
-          fill
-          className="object-cover rounded-xl shadow-imgShadow"
-          priority
-        />
-      </div>
+      <Image
+        src={handshake}
+        alt="handshaking"
+        className="imageStyle object-cover rounded-xl shadow-imgShadow grayscale"
+        priority
+      />
     </section>
   );
 };
