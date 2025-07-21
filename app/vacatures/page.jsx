@@ -9,18 +9,30 @@ const JobsPage = async ({ searchParams }) => {
     (a, b) => new Date(b.$createdAt) - new Date(a.$createdAt)
   );
 
-  // Filter jobs based on text search parameter
+  // Filter jobs based on search parameters
   const resolvedSearchParams = await searchParams;
   const searchTerm = resolvedSearchParams?.search || "";
-  const filteredJobs = searchTerm
-    ? sortedJobs.filter((job) => {
-        const searchLower = searchTerm.toLowerCase();
-        return (
-          job.vacatureTitel?.toLowerCase().includes(searchLower) ||
-          job.standplaats?.toLowerCase().includes(searchLower)
-        );
-      })
-    : sortedJobs;
+  const categoryFilter = resolvedSearchParams?.category || "";
+  
+  let filteredJobs = sortedJobs;
+  
+  // Apply text search filter
+  if (searchTerm) {
+    filteredJobs = filteredJobs.filter((job) => {
+      const searchLower = searchTerm.toLowerCase();
+      return (
+        job.vacatureTitel?.toLowerCase().includes(searchLower) ||
+        job.standplaats?.toLowerCase().includes(searchLower)
+      );
+    });
+  }
+  
+  // Apply category filter
+  if (categoryFilter) {
+    filteredJobs = filteredJobs.filter((job) => {
+      return job.category === categoryFilter;
+    });
+  }
 
   return (
     <>
@@ -41,7 +53,16 @@ const JobsPage = async ({ searchParams }) => {
           </h2>
           <p className="text-sm text-jsText mb-6">
             {filteredJobs.length} vacature{filteredJobs.length !== 1 ? "s" : ""}{" "}
-            {searchTerm ? `gevonden voor "${searchTerm}"` : "beschikbaar"}
+            {searchTerm || categoryFilter ? (
+              <>
+                gevonden
+                {searchTerm && ` voor "${searchTerm}"`}
+                {categoryFilter && ` in categorie "${categoryFilter}"`}
+                {searchTerm && categoryFilter && " "}
+              </>
+            ) : (
+              "beschikbaar"
+            )}
           </p>
 
           {/* vacature mapping */}
@@ -52,9 +73,16 @@ const JobsPage = async ({ searchParams }) => {
               })
             ) : (
               <p className="text-jsGreen font-semibold">
-                {searchTerm
-                  ? `Geen vacatures gevonden voor "${searchTerm}".`
-                  : "Er zijn momenteel geen vacatures beschikbaar."}
+                {searchTerm || categoryFilter ? (
+                  <>
+                    Geen vacatures gevonden
+                    {searchTerm && ` voor "${searchTerm}"`}
+                    {categoryFilter && ` in categorie "${categoryFilter}"`}
+                    .
+                  </>
+                ) : (
+                  "Er zijn momenteel geen vacatures beschikbaar."
+                )}
               </p>
             )}
           </section>

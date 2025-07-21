@@ -11,6 +11,7 @@ const SearchAndFilter = () => {
   const [searchTerm, setSearchTerm] = useState(
     searchParams.get("search") || ""
   );
+  const activeCategory = searchParams.get("category") || "";
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
@@ -46,7 +47,48 @@ const SearchAndFilter = () => {
       {/* filter container */}
       <div className="flex md:flex-row flex-wrap items-center md:items-center gap-3">
         <p className="text-jsText text-sm">Filter per categorie:</p>
-        {/* TO DO: add category filters */}
+        {[
+          "HR & Office",
+          "Commercieel & Sales",
+          "Infra & Civiel",
+          "ZZP & Projectopdrachten",
+        ].map((category) => {
+          const isActive = activeCategory === category;
+          return (
+            <ActionButton
+              key={category}
+              onClick={() => {
+                const params = new URLSearchParams(searchParams);
+                if (isActive) {
+                  // If already active, remove the filter
+                  params.delete("category");
+                } else {
+                  // Otherwise, set the new category
+                  params.set("category", category);
+                }
+                router.push(`/vacatures?${params.toString()}`);
+              }}
+              variant={isActive ? "green" : "primary"}
+              className="text-sm"
+            >
+              {category}
+            </ActionButton>
+          );
+        })}
+
+        {/* Clear filters button - only show if there are active filters */}
+        {(searchTerm || activeCategory) && (
+          <ActionButton
+            onClick={() => {
+              setSearchTerm("");
+              router.push("/vacatures");
+            }}
+            variant="primary"
+            className="text-sm font-bold border-dashed"
+          >
+            X Alle filters wissen
+          </ActionButton>
+        )}
       </div>
     </div>
   );
