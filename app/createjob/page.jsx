@@ -48,6 +48,7 @@ const JobCreationPage = () => {
             id="vacatureNummer"
             placeholder="vac-001"
             className="mt-1 mb-4 w-full py-2 px-3 bg-jsOffWhite border border-slate-300 rounded-md text-sm"
+            required
           />
 
           {/* vacature titel */}
@@ -107,6 +108,7 @@ const JobCreationPage = () => {
             id="werkgever"
             placeholder="Pico Bello BV"
             className="mt-1 mb-4 w-full py-2 px-3 bg-jsOffWhite border border-slate-300 rounded-md text-sm"
+            required
           />
 
           {/* standplaats */}
@@ -119,6 +121,7 @@ const JobCreationPage = () => {
             id="standplaats"
             placeholder="Rotterdam"
             className="mt-1 mb-4 w-full py-2 px-3 bg-jsOffWhite border border-slate-300 rounded-md text-sm"
+            required
           />
 
           {/* introductie */}
@@ -131,6 +134,7 @@ const JobCreationPage = () => {
             placeholder="Wil jij werken met geavanceerde installaties in een schone en veilige omgeving? Dan is dit jouw kans!"
             className="min-h-28 mt-1 mb-4 w-full py-2 px-3 bg-jsOffWhite border border-slate-300 rounded-md text-sm"
             style={{ resize: "none" }}
+            required
           />
 
           {/* functieomschrijving */}
@@ -146,11 +150,12 @@ const JobCreationPage = () => {
             placeholder="In deze rol bewaak je het productieproces en zorg je dat de installaties optimaal functioneren. Je stuurt bij waar nodig en voert kwaliteitscontroles uit."
             className="min-h-28 mt-1 mb-4 w-full py-2 px-3 bg-jsOffWhite border border-slate-300 rounded-md text-sm"
             style={{ resize: "none" }}
+            required
           />
 
           {/* functie-eisen KOPTEKST */}
           <label htmlFor="eisenKoptekst" className="text-jsMidnight text-sm">
-            Koptekst voor functie-eisen
+            Koptekst voor functie-eisen (niet verplicht)
           </label>
           <input
             type="text"
@@ -170,6 +175,7 @@ const JobCreationPage = () => {
             id="functieEisen"
             placeholder="Afgeronde opleiding in techniek, 2 jaar ervaring, werken in ploegen"
             className="mt-1 mb-4 w-full py-2 px-3 bg-jsOffWhite border border-slate-300 rounded-md text-sm"
+            required
           />
 
           {/* arbeidvoorwaarden KOPTEKST */}
@@ -177,7 +183,7 @@ const JobCreationPage = () => {
             htmlFor="voorwaardenKoptekst"
             className="text-jsMidnight text-sm"
           >
-            Koptekst voor arbeidsvoorwaarden
+            Koptekst voor arbeidsvoorwaarden (niet verplicht)
           </label>
           <input
             type="text"
@@ -200,6 +206,7 @@ const JobCreationPage = () => {
             id="arbeidsvoorwaarden"
             placeholder="Salaris tussen €2.800, 25 vakantiedagen, doorgroeimogelijkheden"
             className="mt-1 mb-4 w-full py-2 px-3 bg-jsOffWhite border border-slate-300 rounded-md text-sm"
+            required
           />
 
           {/* uren */}
@@ -212,6 +219,7 @@ const JobCreationPage = () => {
             id="uren"
             placeholder="40"
             className="mt-1 mb-4 w-full py-2 px-3 bg-jsOffWhite border border-slate-300 rounded-md text-sm"
+            required
           />
 
           {/* opleiding */}
@@ -224,6 +232,7 @@ const JobCreationPage = () => {
             id="opleiding"
             placeholder="HBO"
             className="mt-1 mb-4 w-full py-2 px-3 bg-jsOffWhite border border-slate-300 rounded-md text-sm"
+            required
           />
 
           {/* niveau */}
@@ -251,11 +260,12 @@ const JobCreationPage = () => {
             id="salaris"
             placeholder="€2.800 - €3.400"
             className="mt-1 mb-4 w-full py-2 px-3 bg-jsOffWhite border border-slate-300 rounded-md text-sm"
+            required
           />
 
           {/* spotlight */}
           <label htmlFor="featured" className="text-jsMidnight text-sm">
-            Uitlichten?
+            Toevoegen als top vacature?
           </label>
           <input
             type="checkbox"
