@@ -14,3 +14,11 @@
 .inspect {
   border: solid red 1px;
 }
+
+.fader-delay-100 {
+  animation-delay: 100ms;
+}
+
+.fader-delay-200 {
+  animation-delay: 200ms;
+}
