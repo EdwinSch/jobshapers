@@ -15,8 +15,7 @@ const JobDetailsHeader = ({ jobDetails }) => {
         <p className="text-xs text-jsText mb-6">
           Geplaatst op: {formatDate(jobDetails.$createdAt)}
         </p>
-        {/* job description */}
-        <p>{jobDetails.introductie}</p>
+        <p>{jobDetails.ondertitel}</p>
       </div>
 
       {/* right/bottom */}

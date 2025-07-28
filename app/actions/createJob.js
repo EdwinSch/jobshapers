@@ -39,6 +39,7 @@ async function createJob(previousState, formData) {
         vacatureNummer: formData.get("vacatureNummer"),
         vacatureTitel: formData.get("vacatureTitel"),
         subTitel: formData.get("subTitel"),
+        ondertitel: formData.get("ondertitel"),
         category: formData.get("categorie"),
         werkgever: formData.get("werkgever"),
         standplaats: formData.get("standplaats"),

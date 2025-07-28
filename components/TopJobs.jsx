@@ -18,12 +18,12 @@ const TopJobs = async () => {
     .slice(0, 3);
 
   return (
-    <div className="mx-auto max-w-7xl py-10 px-4 md:px-6 lg:px-8">
-      <h2 className="text-jsGreen text-2xl md:text-3xl font-bold capitalize text-center">
-        top vacatures
-      </h2>
+    featuredJobs.length > 0 && (
+      <div className="mx-auto max-w-7xl py-10 px-4 md:px-6 lg:px-8">
+        <h2 className="text-jsGreen text-2xl md:text-3xl font-bold capitalize text-center">
+          top vacatures
+        </h2>
 
-      {featuredJobs.length > 0 && (
         <section className="flex flex-col md:flex-row gap-6 my-12">
           {featuredJobs.map((job) => {
             return (
@@ -62,15 +62,15 @@ const TopJobs = async () => {
             );
           })}
         </section>
-      )}
 
-      <LinkButton
-        href="/vacatures"
-        variant="tertiary"
-        label={"bekijk alle vacatures"}
-        className="m-auto text-center w-fit"
-      />
-    </div>
+        <LinkButton
+          href="/vacatures"
+          variant="tertiary"
+          label={"bekijk alle vacatures"}
+          className="m-auto text-center w-fit"
+        />
+      </div>
+    )
   );
 };
 
