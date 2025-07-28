@@ -13,9 +13,9 @@ const JobsPage = async ({ searchParams }) => {
   const resolvedSearchParams = await searchParams;
   const searchTerm = resolvedSearchParams?.search || "";
   const categoryFilter = resolvedSearchParams?.category || "";
-  
+
   let filteredJobs = sortedJobs;
-  
+
   // Apply text search filter
   if (searchTerm) {
     filteredJobs = filteredJobs.filter((job) => {
@@ -26,7 +26,7 @@ const JobsPage = async ({ searchParams }) => {
       );
     });
   }
-  
+
   // Apply category filter
   if (categoryFilter) {
     filteredJobs = filteredJobs.filter((job) => {
@@ -77,8 +77,7 @@ const JobsPage = async ({ searchParams }) => {
                   <>
                     Geen vacatures gevonden
                     {searchTerm && ` voor "${searchTerm}"`}
-                    {categoryFilter && ` in categorie "${categoryFilter}"`}
-                    .
+                    {categoryFilter && ` in categorie "${categoryFilter}"`}.
                   </>
                 ) : (
                   "Er zijn momenteel geen vacatures beschikbaar."
