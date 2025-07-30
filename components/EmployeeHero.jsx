@@ -31,7 +31,7 @@ const EmployeeHero = () => {
 
       <Image
         src={desk}
-        alt="mutliple people in a birds view"
+        alt="laptop on a desk"
         className="imageStyle object-cover rounded-xl shadow-imgShadow grayscale"
         priority
       />

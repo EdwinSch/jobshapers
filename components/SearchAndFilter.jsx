@@ -45,7 +45,7 @@ const SearchAndFilter = () => {
       </form>
 
       {/* filter container */}
-      <div className="flex md:flex-row flex-wrap items-center md:items-center gap-3">
+      <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
         <p className="text-jsText text-sm">Filter per categorie:</p>
         {[
           "HR & Office",
@@ -69,7 +69,7 @@ const SearchAndFilter = () => {
                 router.push(`/vacatures?${params.toString()}`);
               }}
               variant={isActive ? "green" : "primary"}
-              className="text-sm"
+              className="text-sm w-full md:w-fit"
             >
               {category}
             </ActionButton>

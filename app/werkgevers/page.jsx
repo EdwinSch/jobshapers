@@ -74,11 +74,11 @@ const EmployersPage = () => {
               match creëren die duurzaam is en écht impact maakt — voor jou,
               voor de organisatie en voor de toekomst.
             </p>
-            <div>
-              <h3 className="mb-2 font-bold text-2xl text-jsMidnight text-center">
+            <div className="w-full">
+              <h3 className="mb-4 font-bold text-2xl text-jsMidnight text-center">
                 Onze kernwaarden
               </h3>
-              <ul>
+              <ul className="flex flex-col items-start md:items-center gap-3">
                 <li className="mb-1 flex justify-center items-center gap-2">
                   <FaRegCircleCheck className="text-jsGreen" />
                   <span className="text-jsText">

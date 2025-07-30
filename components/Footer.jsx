@@ -1,5 +1,7 @@
 import LinkButton from "./LinkButton";
 import FooterList from "./FooterList";
+import logo from "@/assets/js-logo-white-sm.png";
+import Image from "next/image";
 import { FaPhone, FaEnvelope, FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
@@ -27,7 +29,15 @@ const Footer = () => {
         {/* footer bottom */}
         <section className="flex flex-col sm:flex-row justify-center gap-8 sm:gap-30 my-0 sm:my-6">
           {/* socials */}
-          <FooterList title={"LOGO"}>
+          <FooterList>
+            <Image
+              src={logo}
+              alt="logo"
+              className="-mt-1.5 mb-4.5"
+              width={130}
+              height={0}
+              priority
+            />
             <a
               href="https://linkedin.com/company/jobshapers"
               target="_blank"
@@ -69,18 +79,18 @@ const Footer = () => {
           {/* contact info */}
           <FooterList title={"Contact Info"}>
             <a
-              href="tel:+31 6 12345678"
+              href="tel:+31641597400"
               className="text-jsSubtext hover:text-jsBlue dureation-200 font-normal mb-2 flex items-center gap-3"
             >
               <FaPhone />
-              +31 6 12345678
+              +31 6 41597400
             </a>
             <a
-              href="mailto:hello@jobshapers.com"
+              href="mailto:info@jobshapers.nl"
               className="text-jsSubtext hover:text-jsBlue dureation-200 font-normal mb-2 flex items-center gap-3"
             >
               <FaEnvelope />
-              hello@jobshapers.com
+              info@jobshapers.nl
             </a>
           </FooterList>
         </section>

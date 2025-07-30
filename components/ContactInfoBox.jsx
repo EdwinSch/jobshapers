@@ -29,20 +29,20 @@ const ContactInfoBox = () => {
           iconShade={"#d2fae5"}
         >
           <a
-            href="tel:+31 6 12345678"
+            href="tel:+31641597400"
             className="text-jsText hover:text-jsMidnight duration-200"
           >
-            +31 6 12345678
+            +31 6 41597400
           </a>
         </ContactItem>
 
         {/* email */}
         <ContactItem title="email" icon={FaEnvelope} iconColor="text-jsBlue">
           <a
-            href="mailto:hello@jobshapers.com"
+            href="mailto:info@jobshapers.nl"
             className="text-jsText hover:text-jsMidnight duration-200"
           >
-            hello@jobshapers.com
+            info@jobshapers.nl
           </a>
         </ContactItem>
 
