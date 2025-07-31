@@ -18,7 +18,7 @@ const ContactInfoBox = () => {
       <div className="flex flex-col gap-6">
         {/* location */}
         <ContactItem title="locatie" icon={FaLocationDot}>
-          <p className="text-jsText">Breda, Netherlands</p>
+          <p className="text-jsText">Sprundel, Netherlands</p>
         </ContactItem>
 
         {/* Telephone */}
