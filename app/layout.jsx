@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import AuthWrapper from "@/components/AuthWrapper";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"] });
 const nunito = Nunito_Sans({ subsets: ["latin"] });
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
           <ToastContainer position="top-center" autoClose={2000} />
           <Header />
           {children}
+          <Analytics />
           <Footer />
         </body>
       </html>
