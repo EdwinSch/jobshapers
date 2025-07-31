@@ -2,6 +2,7 @@ import EmployeeHero from "@/components/EmployeeHero";
 import SellingPointCard from "@/components/SellingPointCard";
 import TopJobs from "@/components/TopJobs";
 import { FaSuitcase, FaUserCheck, FaLink, FaRegCompass } from "react-icons/fa6";
+export const dynamic = "force-dynamic";
 
 const EmployeesPage = () => {
   return (
