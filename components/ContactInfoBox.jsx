@@ -29,10 +29,10 @@ const ContactInfoBox = () => {
           iconShade={"#d2fae5"}
         >
           <a
-            href="tel:+31641597400"
+            href="tel:+31634708727"
             className="text-jsText hover:text-jsMidnight duration-200"
           >
-            +31 6 41597400
+            +31 6 34708727
           </a>
         </ContactItem>
 

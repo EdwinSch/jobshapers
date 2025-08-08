@@ -79,11 +79,11 @@ const Footer = () => {
           {/* contact info */}
           <FooterList title={"Contact Info"}>
             <a
-              href="tel:+31641597400"
+              href="tel:+31634708727"
               className="text-jsSubtext hover:text-jsBlue dureation-200 font-normal mb-2 flex items-center gap-3"
             >
               <FaPhone />
-              +31 6 41597400
+              +31 6 34708727
             </a>
             <a
               href="mailto:info@jobshapers.nl"
