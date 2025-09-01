@@ -74,6 +74,12 @@ const Footer = () => {
               href="/contact"
               className="text-jsSubtext font-normal mb-2"
             />
+            <LinkButton
+              variant="ghost"
+              label="algemene voorwaarden"
+              href="/voorwaarden"
+              className="text-jsSubtext font-normal mb-2"
+            />
           </FooterList>
 
           {/* contact info */}
