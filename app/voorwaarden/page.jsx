@@ -87,8 +87,11 @@ const TermsPage = () => {
         </h2>
         <article className="mb-2 text-sm leading-6">
           5.1. De overeengekomen vergoeding wordt in twee termijnen
-          gefactureerd: 50% bij startdatum van de kandidaat; 50% na succesvol
-          afronden van de proeftijd.
+          gefactureerd:
+          <br />
+          50% bij startdatum van de kandidaat;
+          <br />
+          50% na succesvol afronden van de proeftijd.
         </article>
         <article className="mb-2 text-sm leading-6">
           5.2. Indien het dienstverband binnen de proeftijd wordt beëindigd,
@@ -194,12 +197,8 @@ const TermsPage = () => {
           JOBSHAPERS gevestigd is.
         </article>
 
-        {/* Artikel 11 */}
+        {/* Slot */}
         <h2 className="mb-2 mt-6 text-sm font-semibold">Slotbepaling</h2>
-        <article className="mb-2 text-sm leading-6">
-          11.1. Op alle overeenkomsten en diensten van JOBSHAPERS is uitsluitend
-          Nederlands recht van toepassing.
-        </article>
         <article className="mb-2 text-sm leading-6">
           Door gebruik te maken van de diensten van JOBSHAPERS verklaart
           opdrachtgever kennis te hebben genomen van en akkoord te gaan met deze
