@@ -2,6 +2,9 @@
   "name": "jobshapers",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,7 +13,7 @@
   },
   "dependencies": {
     "@vercel/analytics": "^1.5.0",
-    "next": "^15.3.6",
+    "next": "^15.5.26",
     "node-appwrite": "^17.0.0",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
@@ -23,7 +26,7 @@
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
-    "eslint-config-next": "15.3.3",
+    "eslint-config-next": "^15.5.25",
     "tailwindcss": "^4"
   }
 }
